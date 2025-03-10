@@ -16,7 +16,7 @@ const initialMessages = [
   {
     id: 1,
     user: "Support Agent",
-    avatar: "@/public/Assets/Images/lady.png",
+    avatar: "/src/Assets/Images/lady.png",
     text: "Hello John! I see you have a question about your Fashion Glasses order. How can I help you today?",
     time: "10:30 AM",
     sent: false,
@@ -24,7 +24,7 @@ const initialMessages = [
   {
     id: 2,
     user: "You",
-    avatar: "@/public/Assets/Images/lady.png",
+    avatar: "/src/Assets/Images/lady.png",
     text: "Hi, I was wondering when my glasses will arrive. The tracking hasn't updated in 2 days.",
     time: "10:35 AM",
     sent: true,
@@ -59,7 +59,7 @@ export default function ChatUI() {
       const responseMessage = {
         id: chatMessages.length + 2,
         user: "Support Agent",
-        avatar: "@/public/Assets/Images/lady.png",
+        avatar: "/src/Assets/Images/lady.png",
         text: "I've checked your order status and see that your package is currently at our regional distribution center. There was a slight delay due to weather conditions, but it should resume transit within 24 hours. Your updated delivery estimate is now Jan 19, 2024. Would you like me to send you an email when it ships out?",
         time: new Date().toLocaleTimeString([], {
           hour: "2-digit",

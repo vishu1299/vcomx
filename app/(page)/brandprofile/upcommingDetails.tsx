@@ -6,7 +6,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import React from "react";
 const eventsData = [
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -21,7 +21,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -36,7 +36,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -51,7 +51,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -66,7 +66,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -81,7 +81,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -96,7 +96,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -111,7 +111,7 @@ const eventsData = [
     setReminder: "Set Reminder",
   },
   {
-    image: "/Assets/Images/upcomming/img.png",
+    image: "/src/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",

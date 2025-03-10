@@ -36,7 +36,7 @@ export default function OtpScreen() {
       <div className="rounded-lg p-8 w-full max-w-md text-center">
         <div className="text-orange-500 text-5xl mb-4 flex justify-center">
           <Image
-            src={"/Assets/Images/otplogo.png"} // Path inside the `public` folder
+            src={"/src/Assets/Images/otplogo.png"} // Path inside the `public` folder
             alt="Description of image"
             width={100}
             height={100}

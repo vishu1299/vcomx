@@ -10,7 +10,7 @@ const posts = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
     date: "Jan 11, 2021",
-    image: "/Assets/Images/post/post-img-1.jpeg",
+    image: "/src/Assets/Images/post/post-img-1.jpeg",
     calendericon: <IoCalendarOutline />,
   },
 ];
@@ -24,7 +24,7 @@ const recentlyPosted = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
     date: "Jan 11, 2021",
-    image: "/Assets/Images/post/recently-img-2.jpeg",
+    image: "/src/Assets/Images/post/recently-img-2.jpeg",
     calendericon: <IoCalendarOutline />,
   },
   {
@@ -35,7 +35,7 @@ const recentlyPosted = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
     date: "Jan 11, 2021",
-    image: "/Assets/Images/post/recently-img-1.jpeg",
+    image: "/src/Assets/Images/post/recently-img-1.jpeg",
     calendericon: <IoCalendarOutline />,
   },
   {
@@ -46,7 +46,7 @@ const recentlyPosted = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
     date: "Jan 11, 2021",
-    image: "/Assets/Images/post/recently-img-2.jpeg",
+    image: "/src/Assets/Images/post/recently-img-2.jpeg",
     calendericon: <IoCalendarOutline />,
   },
   {
@@ -57,7 +57,7 @@ const recentlyPosted = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
     date: "Jan 11, 2021",
-    image: "/Assets/Images/post/recently-img-1.jpeg",
+    image: "/src/Assets/Images/post/recently-img-1.jpeg",
     calendericon: <IoCalendarOutline />,
   },
 ];

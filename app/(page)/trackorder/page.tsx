@@ -19,7 +19,7 @@ const OrderTracking = () => {
       price: 199.99,
       quantity: 1,
       status: "SHIPPED",
-      image: "/Assets/Images/productcard.png",
+      image: "/src/Assets/Images/productcard.png",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const OrderTracking = () => {
       price: 199.99,
       quantity: 1,
       status: "Processing",
-      image: "/Assets/Images/productcard.png",
+      image: "/src/Assets/Images/productcard.png",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const OrderTracking = () => {
       price: 199.99,
       quantity: 1,
       status: "SHIPPED",
-      image: "/Assets/Images/productcard.png",
+      image: "/src/Assets/Images/productcard.png",
     },
   ];
 
@@ -157,7 +157,7 @@ const OrderTracking = () => {
         {/* Map */}
         <div className="w-full h-32 sm:h-40 md:h-48 bg-gray-200 rounded-lg overflow-hidden mb-6">
           <Image
-            src="/src/Assets/Images/map.png"
+            src="/src/src/Assets/Images/map.png"
             alt="Delivery Map"
             width={800}
             height={300}

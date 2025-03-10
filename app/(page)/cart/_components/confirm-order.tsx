@@ -8,7 +8,7 @@ export default function OrderConfirmation() {
         <div className="flex justify-center mb-4">
           <div className="w-16 h-16  flex items-center justify-center">
             <Image
-              src="Assets/Images/confirm.png"
+              src="/src/Assets/Images/confirm.png"
               width={70}
               height={70}
               alt="Picture of the Confirmation"

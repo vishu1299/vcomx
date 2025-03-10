@@ -37,7 +37,7 @@ const Products = () => {
     <div>
       <div className="relative w-full h-64 rounded-xl overflow-hidden">
         <img
-          src="/Assets/Images/products/imge-product.jpg"
+          src="/src/Assets/Images/products/imge-product.jpg"
           alt="Product"
           className="absolute w-full h-full object-cover"
         />

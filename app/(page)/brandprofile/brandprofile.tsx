@@ -9,7 +9,7 @@ const BrandProfile = () => {
       <div className=" py-6 lg:px-0 px-4">
         <div className="relative w-full h-48 md:h-64 lg:h-72 bg-blue-100 rounded-lg overflow-hidden ">
           <img
-            src="/Assets/Images/brandprofile/brandprofile.png"
+            src="/src/Assets/Images/brandprofile/brandprofile.png"
             alt="Skincare products banner"
             className="w-full h-full object-cover"
           />
@@ -19,7 +19,7 @@ const BrandProfile = () => {
           <div className="relative">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 overflow-hidden bg-gray-200 border-red-500">
               <img
-                src="/Assets/Images/profilestore/pro-img-1.png"
+                src="/src/Assets/Images/profilestore/pro-img-1.png"
                 alt="Profile avatar"
                 className="w-full h-full object-cover"
               />
@@ -39,7 +39,7 @@ const BrandProfile = () => {
                 </h1>
                 <span className="ml-2 text-orange-500">
                   <img
-                    src="/Assets/Images/profilestore/verify.png"
+                    src="/src/Assets/Images/profilestore/verify.png"
                     alt=""
                     className="w-5 h-5 md:w-6 md:h-6"
                   />

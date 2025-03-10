@@ -30,7 +30,7 @@ export default function CancelOrder() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-4">
             <div className="flex-shrink-0">
               <Image
-                src="/Assets/Images/cart.png"
+                src="/src/Assets/Images/cart.png"
                 alt="Cart"
                 width={100}
                 height={100}

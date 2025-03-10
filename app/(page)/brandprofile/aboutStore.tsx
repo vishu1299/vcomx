@@ -21,7 +21,7 @@ const AboutStore = () => {
 
       <div className="relative mt-4">
         <img
-          src="/src/assets/Images/brandprofile/store.png"
+          src="/src/Assets/Images/brandprofile/store.png"
           alt="Store"
           className="h-64 md:h-96 lg:h-[574px] w-full rounded-lg object-cover"
         />

@@ -9,7 +9,7 @@ const ProfilePage = () => {
     <div className=" py-6 ">
       <div className="relative w-full h-48 md:h-64 lg:h-72 bg-blue-100 rounded-lg overflow-hidden ">
         <img
-          src="/assets/Images/profilestore/bannerForProfile.jpeg"
+          src="/Assets/Images/profilestore/bannerForProfile.jpeg"
           alt="Skincare products banner"
           className="w-full h-full object-cover"
         />
@@ -19,7 +19,7 @@ const ProfilePage = () => {
         <div className="relative">
           <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 overflow-hidden bg-gray-200 border-red-500">
             <img
-              src="/assets/Images/profilestore/pro-img-1.png"
+              src="/Assets/Images/profilestore/pro-img-1.png"
               alt="Profile avatar"
               className="w-full h-full object-cover"
             />
@@ -38,7 +38,11 @@ const ProfilePage = () => {
                 Lorem
               </h1>
               <span className="ml-2 text-orange-500">
-                <img src="/assets/Images/profilestore/verify.png" alt="" className="w-5 h-5 md:w-6 md:h-6" />
+                <img
+                  src="/Assets/Images/profilestore/verify.png"
+                  alt=""
+                  className="w-5 h-5 md:w-6 md:h-6"
+                />
               </span>
             </div>
             <p className="font-Oswald text-[#1F1D2B] text-sm md:text-lg">
@@ -63,7 +67,8 @@ const ProfilePage = () => {
       <div className="flex flex-col md:flex-row justify-between mt-6 space-y-4 md:space-y-0  ">
         <div>
           <p className="text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+            mi.
           </p>
         </div>
 
@@ -82,10 +87,9 @@ const ProfilePage = () => {
           </div>
         </div>
       </div>
-    <div>
-     <Storenavebar/>
-    </div>
-    
+      <div>
+        <Storenavebar />
+      </div>
     </div>
   );
 };

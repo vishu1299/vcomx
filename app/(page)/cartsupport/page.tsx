@@ -12,7 +12,6 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 
-
 const initialMessages = [
   {
     id: 1,

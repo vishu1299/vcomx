@@ -20,10 +20,10 @@ const ProductPageReplica = () => {
   const [activeTab, setActiveTab] = useState("Product Details");
 
   const galleryImages = [
-    "/assets/Images/products/product-1.jpeg",
-    "/assets/Images/products/product-1.jpeg",
-    "/assets/Images/products/product-1.jpeg",
-    "/assets/Images/products/product-1.jpeg",
+    "/Assets/Images/products/product-1.jpeg",
+    "/Assets/Images/products/product-1.jpeg",
+    "/Assets/Images/products/product-1.jpeg",
+    "/Assets/Images/products/product-1.jpeg",
   ];
 
   return (

@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import Image from "next/image";
@@ -10,28 +7,28 @@ const stores = [
   {
     name: "Running Shoes",
     count: 54,
-    image: "/src/assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/stories/stories-1.png",
   },
   {
     name: "Running Clothes",
     count: 40,
-    image: "/src/assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/stories/stories-1.png",
     live: true,
   },
   {
     name: "Running Watch",
     count: 16,
-    image: "/src/assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/stories/stories-1.png",
   },
   {
     name: "Accessory",
     count: 22,
-    image: "/src/assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/stories/stories-1.png",
   },
   {
     name: "Cosmetics",
     count: 17,
-    image: "/src/assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/stories/stories-1.png",
   },
 ];
 

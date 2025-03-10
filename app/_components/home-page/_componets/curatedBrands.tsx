@@ -64,40 +64,40 @@ const services: Service[] = [
 
 const brands: BrandItem[] = [
   {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (1).png",
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (1).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
   {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (2).png",
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
-    name: "LOREM",
-    size: "200 ML",
-  },
-
-  {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (3).png",
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
-    name: "LOREM",
-    size: "200 ML",
-  },
-  {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (1).png",
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (2).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
 
   {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (1).png",
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (3).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
   {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (2).png" ,
-    fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (1).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
+    name: "LOREM",
+    size: "200 ML",
+  },
+
+  {
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (1).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
+    name: "LOREM",
+    size: "200 ML",
+  },
+  {
+    bg: "/src/Assets/Images/CURATEDBRANDS/Background (2).png",
+    fg: "/src/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
@@ -198,7 +198,7 @@ const CuratedBrands: React.FC = () => {
       <div className="flex  flex-col md:flex-row gap-4 w-full max-w-6xl p-8 mt-6">
         <div className="relative bg-orange-200 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
           <Image
-            src="/src/assets/Images/CURATEDBRANDS/brewier.jpeg"
+            src="/src/Assets/Images/CURATEDBRANDS/brewier.jpeg"
             alt="Product Image"
             layout="fill"
             objectFit="cover"
@@ -218,7 +218,7 @@ const CuratedBrands: React.FC = () => {
 
         <div className="relative bg-gray-300 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
           <Image
-            src="/src/assets/Images/CURATEDBRANDS/brewier.jpeg"
+            src="/src/Assets/Images/CURATEDBRANDS/brewier.jpeg"
             alt="Product Image"
             layout="fill"
             objectFit="cover"

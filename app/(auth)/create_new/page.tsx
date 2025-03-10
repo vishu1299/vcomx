@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useState } from "react";
-import {  FiEye, FiEyeOff } from "react-icons/fi";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 export default function ResetPassword() {
   const [password, setPassword] = useState("");
@@ -13,15 +13,18 @@ export default function ResetPassword() {
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="rounded-lg p-8 w-full max-w-md text-center">
         <div className="text-orange-500 text-5xl mb-4 flex justify-center">
-          <Image 
+          <Image
             src="/Assets/Images/resetlogo.png" // Path inside the `public` folder
             alt="Description of image"
-            width={100} 
-            height={100} 
-            className="text-[#FF6F3C]" />
+            width={100}
+            height={100}
+            className="text-[#FF6F3C]"
+          />
         </div>
         <h2 className="text-2xl font-semibold mb-2">Reset Password</h2>
-        <p className="text-gray-600 mb-6">Please kindly set your new password</p>
+        <p className="text-gray-600 mb-6">
+          Please kindly set your new password
+        </p>
 
         <div className="mb-4 relative">
           <input

@@ -21,15 +21,15 @@ type BestSellerItem = {
 const VideosComp: React.FC = () => {
   const bestSellersData: BestSellerItem[] = [
     {
-      image: "/assets/Images/bestSellers/bestsellers-1.jpg",
-      playIcon: "/assets/Images/bestSellers/Icon.png",
+      image: "/Assets/Images/bestSellers/bestsellers-1.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW", "-20%"],
-          starIcon: "/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -37,15 +37,15 @@ const VideosComp: React.FC = () => {
       ],
     },
     {
-      image: "/assets/Images/bestSellers/bestsellers-2.jpg",
-      playIcon: "/assets/Images/bestSellers/Icon.png",
+      image: "/Assets/Images/bestSellers/bestsellers-2.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW", "-20%"],
-          starIcon: "/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -53,15 +53,15 @@ const VideosComp: React.FC = () => {
       ],
     },
     {
-      image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-      playIcon: "/assets/Images/bestSellers/Icon.png",
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW"],
-          starIcon: "/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -69,15 +69,15 @@ const VideosComp: React.FC = () => {
       ],
     },
     {
-      image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-      playIcon: "/assets/Images/bestSellers/Icon.png",
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW"],
-          starIcon: "/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -85,144 +85,146 @@ const VideosComp: React.FC = () => {
       ],
     },
     {
-        image: "/assets/Images/bestSellers/bestsellers-1.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW", "-20%"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-2.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW", "-20%"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-1.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW", "-20%"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-2.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW", "-20%"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
-      {
-        image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-        playIcon: "/assets/Images/bestSellers/Icon.png",
-        title: "Premium Smartwatch",
-        viewCount: "45K views",
-        like: "2.3K likes",
-        tags: [
-          {
-            tagButton: ["SALE", "NEW"],
-            starIcon: "/assets/Images/bestSellers/star-icon.png",
-            reviews: "(1,234 reviews)",
-            price: "$68.00",
-            discount: "$98.00",
-          },
-        ],
-      },
+      image: "/Assets/Images/bestSellers/bestsellers-1.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW", "-20%"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-2.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW", "-20%"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-1.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW", "-20%"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-2.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW", "-20%"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
+    {
+      image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/Assets/Images/bestSellers/Icon.png",
+      title: "Premium Smartwatch",
+      viewCount: "45K views",
+      like: "2.3K likes",
+      tags: [
+        {
+          tagButton: ["SALE", "NEW"],
+          starIcon: "/Assets/Images/bestSellers/star-icon.png",
+          reviews: "(1,234 reviews)",
+          price: "$68.00",
+          discount: "$98.00",
+        },
+      ],
+    },
   ];
 
   return (
     <div className="py-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-             <p className="font-semibold text-2xl md:text-4xl text-gray-900">Videos</p>
-             <div className="flex items-center gap-2 border border-gray-300 rounded-lg p-2 cursor-pointer">
-               <p className="text-sm md:text-base">Default Sorting</p>
-               <IoFilterOutline className="text-lg" />
-             </div>
-           </div>
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+        <p className="font-semibold text-2xl md:text-4xl text-gray-900">
+          Videos
+        </p>
+        <div className="flex items-center gap-2 border border-gray-300 rounded-lg p-2 cursor-pointer">
+          <p className="text-sm md:text-base">Default Sorting</p>
+          <IoFilterOutline className="text-lg" />
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
         {bestSellersData.map((item, index) => (
@@ -273,7 +275,9 @@ const VideosComp: React.FC = () => {
 
                   <div className="flex items-center mt-2">
                     <img src={tag.starIcon} alt="Star Icon" className="" />
-                    <p className=" text-[14px]  font-normal font-Oswald text-[#5E6267] ml-1">{tag.reviews}</p>
+                    <p className=" text-[14px]  font-normal font-Oswald text-[#5E6267] ml-1">
+                      {tag.reviews}
+                    </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <p className=" text-[#121212] text-[16px] font-Oswald  font-medium">

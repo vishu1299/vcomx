@@ -20,8 +20,6 @@ type BestSellerItem = {
   tags: Tag[];
 };
 
-
-
 interface BrandItem {
   bg: string;
   fg: string;
@@ -31,27 +29,27 @@ interface BrandItem {
 
 const brands: BrandItem[] = [
   {
-    bg: "/assets/Images/CURATEDBRANDS/Background (1).png",
-    fg: "/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/Assets/Images/CURATEDBRANDS/Background (1).png",
+    fg: "/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
   {
-    bg: "/assets/Images/CURATEDBRANDS/Background (2).png",
-    fg: "/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/Assets/Images/CURATEDBRANDS/Background (2).png",
+    fg: "/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
 
   {
-    bg: "/assets/Images/CURATEDBRANDS/Background (3).png",
-    fg: "/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/Assets/Images/CURATEDBRANDS/Background (3).png",
+    fg: "/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
   {
-    bg: "/assets/Images/CURATEDBRANDS/Background (1).png",
-    fg: "/assets/Images/CURATEDBRANDS/Frame 32.png",
+    bg: "/Assets/Images/CURATEDBRANDS/Background (1).png",
+    fg: "/Assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",
   },
@@ -63,15 +61,15 @@ import Image from "next/image";
 
 const bestSellersData: BestSellerItem[] = [
   {
-    image: "/assets/Images/bestSellers/bestsellers-1.jpg",
-    playIcon: "/assets/Images/bestSellers/Icon.png",
+    image: "/Assets/Images/bestSellers/bestsellers-1.jpg",
+    playIcon: "/Assets/Images/bestSellers/Icon.png",
     title: "Premium Smartwatch",
     viewCount: "45K views",
     like: "2.3K likes",
     tags: [
       {
         tagButton: ["SALE", "NEW", "-20%"],
-        starIcon: "/assets/Images/bestSellers/star-icon.png",
+        starIcon: "/Assets/Images/bestSellers/star-icon.png",
         reviews: "(1,234 reviews)",
         price: "$68.00",
         discount: "$98.00",
@@ -79,15 +77,15 @@ const bestSellersData: BestSellerItem[] = [
     ],
   },
   {
-    image: "/assets/Images/bestSellers/bestsellers-2.jpg",
-    playIcon: "/assets/Images/bestSellers/Icon.png",
+    image: "/Assets/Images/bestSellers/bestsellers-2.jpg",
+    playIcon: "/Assets/Images/bestSellers/Icon.png",
     title: "Premium Smartwatch",
     viewCount: "45K views",
     like: "2.3K likes",
     tags: [
       {
         tagButton: ["SALE", "NEW", "-20%"],
-        starIcon: "/assets/Images/bestSellers/star-icon.png",
+        starIcon: "/Assets/Images/bestSellers/star-icon.png",
         reviews: "(1,234 reviews)",
         price: "$68.00",
         discount: "$98.00",
@@ -95,15 +93,15 @@ const bestSellersData: BestSellerItem[] = [
     ],
   },
   {
-    image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-    playIcon: "/assets/Images/bestSellers/Icon.png",
+    image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+    playIcon: "/Assets/Images/bestSellers/Icon.png",
     title: "Premium Smartwatch",
     viewCount: "45K views",
     like: "2.3K likes",
     tags: [
       {
         tagButton: ["SALE", "NEW"],
-        starIcon: "/assets/Images/bestSellers/star-icon.png",
+        starIcon: "/Assets/Images/bestSellers/star-icon.png",
         reviews: "(1,234 reviews)",
         price: "$68.00",
         discount: "$98.00",
@@ -111,15 +109,15 @@ const bestSellersData: BestSellerItem[] = [
     ],
   },
   {
-    image: "/assets/Images/bestSellers/bestsellers-3.jpg",
-    playIcon: "/assets/Images/bestSellers/Icon.png",
+    image: "/Assets/Images/bestSellers/bestsellers-3.jpg",
+    playIcon: "/Assets/Images/bestSellers/Icon.png",
     title: "Premium Smartwatch",
     viewCount: "45K views",
     like: "2.3K likes",
     tags: [
       {
         tagButton: ["SALE", "NEW"],
-        starIcon: "/assets/Images/bestSellers/star-icon.png",
+        starIcon: "/Assets/Images/bestSellers/star-icon.png",
         reviews: "(1,234 reviews)",
         price: "$68.00",
         discount: "$98.00",
@@ -132,48 +130,48 @@ const users = [
   {
     name: "Miracle",
     followers: "327K",
-    image: "/assets/Images/stories/pro-1.jpeg",
+    image: "/Assets/Images/stories/pro-1.jpeg",
     verified: true,
   },
   {
     name: "Miracle Ahmad",
     followers: "12",
-    image: "/assets/Images/stories/pro-2.jpeg",
+    image: "/Assets/Images/stories/pro-2.jpeg",
   },
   {
     name: "Miraclenair",
     followers: "Have no",
-    image: "/assets/Images/stories/pro-1.jpeg",
+    image: "/Assets/Images/stories/pro-1.jpeg",
   },
   {
     name: "Miracleon",
     followers: "327K",
-    image: "/assets/Images/stories/pro-2.jpeg",
+    image: "/Assets/Images/stories/pro-2.jpeg",
   },
   {
     name: "Miraclestop",
     followers: "99K",
-    image: "/assets/Images/stories/pro-1.jpeg",
+    image: "/Assets/Images/stories/pro-1.jpeg",
   },
   {
     name: "Miraclesio",
     followers: "439",
-    image: "/assets/Images/stories/pro-2.jpeg",
+    image: "/Assets/Images/stories/pro-2.jpeg",
   },
   {
     name: "Miraclestop",
     followers: "99K",
-    image: "/assets/Images/stories/pro-1.jpeg",
+    image: "/Assets/Images/stories/pro-1.jpeg",
   },
   {
     name: "Miraclesio",
     followers: "439",
-    image: "/assets/Images/stories/pro-2.jpeg",
+    image: "/Assets/Images/stories/pro-2.jpeg",
   },
 ];
 const eventsData = [
   {
-    image: "/assets/Images/stories/store-1.jpeg",
+    image: "/Assets/Images/stories/store-1.jpeg",
     id: 1,
 
     shop: "Cosmetics & Beauty Products",
@@ -186,11 +184,11 @@ const eventsData = [
     setReminder: "Set Reminder",
     shopping: "Cosmetics",
     products: "Products",
-    imageProfile: "/assets/Images/stories/pro-1.jpeg",
+    imageProfile: "/Assets/Images/stories/pro-1.jpeg",
     verified: true,
   },
   {
-    image: "/assets/Images/stories/store-1.jpeg",
+    image: "/Assets/Images/stories/store-1.jpeg",
     id: 1,
 
     shop: "Cosmetics & Beauty Products",
@@ -203,11 +201,11 @@ const eventsData = [
     setReminder: "Set Reminder",
     shopping: "Cosmetics",
     products: "Products",
-    imageProfile: "/assets/Images/stories/pro-1.jpeg",
+    imageProfile: "/Assets/Images/stories/pro-1.jpeg",
     verified: true,
   },
   {
-    image: "/assets/Images/stories/store-1.jpeg",
+    image: "/Assets/Images/stories/store-1.jpeg",
     id: 1,
 
     shop: "Cosmetics & Beauty Products",
@@ -220,7 +218,7 @@ const eventsData = [
     setReminder: "Set Reminder",
     shopping: "Cosmetics",
     products: "Products",
-    imageProfile: "/assets/Images/stories/pro-1.jpeg",
+    imageProfile: "/Assets/Images/stories/pro-1.jpeg",
     verified: true,
   },
 ];
@@ -228,7 +226,7 @@ const eventsData = [
 const AllSearchResult = () => {
   return (
     <div className="">
-          <div className=" flex justify-between">
+      <div className=" flex justify-between">
         <p className=" font-Oswald text-[#1F1D2B] text-[30px] font-semibold">
           Store
         </p>
@@ -267,7 +265,7 @@ const AllSearchResult = () => {
           </div>
         ))}
       </div>
-  
+
       <div>
         <div className="mt-10">
           <p className=" font-Oswald font-semibold text-[#1F1D2B] text-[30px]">

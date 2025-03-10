@@ -21,15 +21,15 @@ type BestSellerItem = {
 const BestSellers: React.FC = () => {
   const bestSellersData: BestSellerItem[] = [
     {
-      image: "/src/assets/Images/bestSellers/bestsellers-1.jpg",
-      playIcon: "/src/assets/Images/bestSellers/Icon.png",
+      image: "/src/Assets/Images/bestSellers/bestsellers-1.jpg",
+      playIcon: "/src/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW", "-20%"],
-          starIcon: "/src/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/src/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -37,15 +37,15 @@ const BestSellers: React.FC = () => {
       ],
     },
     {
-      image: "/src/assets/Images/bestSellers/bestsellers-2.jpg",
-      playIcon: "/src/assets/Images/bestSellers/Icon.png",
+      image: "/src/Assets/Images/bestSellers/bestsellers-2.jpg",
+      playIcon: "/src/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW", "-20%"],
-          starIcon: "/src/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/src/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -53,15 +53,15 @@ const BestSellers: React.FC = () => {
       ],
     },
     {
-      image: "/src/assets/Images/bestSellers/bestsellers-3.jpg",
-      playIcon: "/src/assets/Images/bestSellers/Icon.png",
+      image: "/src/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/src/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW"],
-          starIcon: "/src/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/src/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",
@@ -69,15 +69,15 @@ const BestSellers: React.FC = () => {
       ],
     },
     {
-      image: "/src/assets/Images/bestSellers/bestsellers-3.jpg",
-      playIcon: "/src/assets/Images/bestSellers/Icon.png",
+      image: "/src/Assets/Images/bestSellers/bestsellers-3.jpg",
+      playIcon: "/src/Assets/Images/bestSellers/Icon.png",
       title: "Premium Smartwatch",
       viewCount: "45K views",
       like: "2.3K likes",
       tags: [
         {
           tagButton: ["SALE", "NEW"],
-          starIcon: "/src/assets/Images/bestSellers/star-icon.png",
+          starIcon: "/src/Assets/Images/bestSellers/star-icon.png",
           reviews: "(1,234 reviews)",
           price: "$68.00",
           discount: "$98.00",

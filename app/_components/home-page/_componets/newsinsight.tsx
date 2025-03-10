@@ -1,10 +1,9 @@
-
 import React from "react";
 
 const NewsInsight = () => {
   const newsinsight = [
     {
-      image: "/src/assets/Images/newsinsight/newsinsight-1.jpg",
+      image: "/src/Assets/Images/newsinsight/newsinsight-1.jpg",
       buttionNew: "Sport",
       title:
         "Exploring the World of Organic Beauty: Tips and Trends for a Natural Glow",
@@ -12,7 +11,7 @@ const NewsInsight = () => {
       dateNews: "Oct 12, 2023",
     },
     {
-      image: "/src/assets/Images/newsinsight/newsinsight-2.jpg",
+      image: "/src/Assets/Images/newsinsight/newsinsight-2.jpg",
       buttionNew: "Sport",
       title:
         "Exploring the World of Organic Beauty: Tips and Trends for a Natural Glow",
@@ -20,7 +19,7 @@ const NewsInsight = () => {
       dateNews: "Oct 12, 2023",
     },
     {
-      image: "/src/assets/Images/newsinsight/newsinsight-3.jpg",
+      image: "/src/Assets/Images/newsinsight/newsinsight-3.jpg",
       buttionNew: "Sport",
       title:
         "Exploring the World of Organic Beauty: Tips and Trends for a Natural Glow",

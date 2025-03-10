@@ -1,12 +1,12 @@
 import { LuUsers } from "react-icons/lu";
 import { AiOutlineEye } from "react-icons/ai";
 import { WiTime7 } from "react-icons/wi";
-import { IoIosNotificationsOutline } from "react-icons/io"
+import { IoIosNotificationsOutline } from "react-icons/io";
 
 import React from "react";
 const eventsData = [
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -17,11 +17,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -32,11 +32,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -47,11 +47,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -62,11 +62,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -77,11 +77,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -92,11 +92,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -107,11 +107,11 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
   {
-    image: "/assets/Images/upcomming/img.png",
+    image: "/Assets/Images/upcomming/img.png",
     id: 1,
     name: "lorem",
     shop: "Beauty & Makeup",
@@ -122,8 +122,8 @@ const eventsData = [
     reminder: "26 reminders",
     timeIcon: <WiTime7 />,
     time: "19:30 GMT",
-    notificationIcon:<IoIosNotificationsOutline />,
-    setReminder:"Set Reminder",
+    notificationIcon: <IoIosNotificationsOutline />,
+    setReminder: "Set Reminder",
   },
 ];
 
@@ -165,55 +165,48 @@ const UpcommingDetails = () => {
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6  w-full mt-6 ">
-       
+          {eventsData.map((item, index) => (
+            <div key={index} className="">
+              <div className="relative rounded-xl">
+                <img src={item.image} alt="" className="w-full  rounded-t-lg" />
 
-{eventsData.map((item, index) => (
-  <div key={index} className="">
-    
-    <div className="relative rounded-xl">
-      <img src={item.image} alt="" className="w-full  rounded-t-lg" />
+                <div className="absolute top-4 right-4 flex items-center gap-2 bg-[#FF6F3C] text-white px-3 py-1 rounded-full text-sm">
+                  {item.timeIcon}
+                  <span>{item.time}</span>
+                </div>
+              </div>
 
-      
-      <div className="absolute top-4 right-4 flex items-center gap-2 bg-[#FF6F3C] text-white px-3 py-1 rounded-full text-sm">
-        {item.timeIcon}
-        <span>{item.time}</span>
-      </div>
-    </div>
+              <div className="mt-4  ">
+                <div className=" bg-white  shadow-md p-4 ">
+                  <p className="text-[#121212] text-[16px] font-Oswald  font-normal">
+                    {item.name}
+                  </p>
+                  <p className="text-[#88888C] text-[16px] font-Oswald  font-normal ">
+                    {item.shop}
+                  </p>
+                  <p className="text-[17px]  font-Oswald  font-normal text-[#121212] py-2">
+                    {item.title}
+                  </p>
 
-    
-    <div className="mt-4  ">
-    
-      
-      <div className=" bg-white  shadow-md p-4 ">
-      <p className="text-[#121212] text-[16px] font-Oswald  font-normal">{item.name}</p>
-      <p className="text-[#88888C] text-[16px] font-Oswald  font-normal ">{item.shop}</p>
-      <p className="text-[17px]  font-Oswald  font-normal text-[#121212] py-2">{item.title}</p>
-
-      <div className="flex gap-8 mt-3  text-[13px] font-normal  text-[#888888]">
-        <div className="flex items-center gap-1">
-          {item.userIcon}
-          <span>{item.intrested}</span>
+                  <div className="flex gap-8 mt-3  text-[13px] font-normal  text-[#888888]">
+                    <div className="flex items-center gap-1">
+                      {item.userIcon}
+                      <span>{item.intrested}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      {item.eyeIcon}
+                      <span>{item.reminder}</span>
+                    </div>
+                  </div>
+                  <button className="mt-4 w-full flex  font-Oswald font-normal items-center justify-center gap-2 border border-[#FF6F3C] text-[#FF6F3C] py-2 rounded-lg ">
+                    {item.notificationIcon}
+                    {item.setReminder}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="flex items-center gap-1">
-          {item.eyeIcon}
-          <span>{item.reminder}</span>
-        </div>
-      </div>
-      <button className="mt-4 w-full flex  font-Oswald font-normal items-center justify-center gap-2 border border-[#FF6F3C] text-[#FF6F3C] py-2 rounded-lg ">
-      {item.notificationIcon}
-      {item.setReminder}
-    </button>
-      </div>
-     
-    </div>
-
- 
-
-  </div>
-))}
-
-        </div>
-
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ import { FiEye } from "react-icons/fi";
 import Image from "next/image";
 
 const bannerData = [
-  { imagebanner: "/src/assets/Images/banner.png" },
-  { imagebanner: "/src/assets/Images/banner.png" },
-  { imagebanner: "/src/assets/Images/banner.png" },
-  { imagebanner: "/src/assets/Images/banner.png" },
+  { imagebanner: "/src/Assets/Images/banner.png" },
+  { imagebanner: "/src/Assets/Images/banner.png" },
+  { imagebanner: "/src/Assets/Images/banner.png" },
+  { imagebanner: "/src/Assets/Images/banner.png" },
 ];
 
 const carouselData = [

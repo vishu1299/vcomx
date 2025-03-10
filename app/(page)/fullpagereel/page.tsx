@@ -8,8 +8,7 @@ import {
   ShoppingBag,
   ShoppingCart,
 } from "lucide-react";
-import productreel from "@/public/Assets/Images/productreel.png";
-import lady from "@/public/Assets/Images/lady.png";
+
 import { FaPlay } from "react-icons/fa";
 
 const Fullpagereel = () => {
@@ -29,7 +28,9 @@ const Fullpagereel = () => {
         {/* Left Side - Product Video/Image */}
         <div className="w-full lg:w-2/5 relative">
           <div
-            style={{ backgroundImage: `url(${productreel.src})` }}
+            style={{
+              backgroundImage: `url(${"/src/Assets/Images/productreel.png"})`,
+            }}
             className="h-[350px] sm:h-[450px] md:h-[500px] lg:h-[600px] bg-cover bg-center relative rounded-lg lg:rounded-none lg:rounded-l-lg"
           >
             {/* Top Overlay */}
@@ -37,7 +38,7 @@ const Fullpagereel = () => {
               <div className="flex justify-between items-center">
                 <div className="flex items-center bg-black/30 backdrop-blur-sm p-1.5 sm:p-2 rounded-full space-x-1 sm:space-x-2">
                   <Image
-                    src={lady}
+                    src="/src/Assets/Images/lady.png"
                     alt="Roxana Michelle"
                     width={32}
                     height={32}

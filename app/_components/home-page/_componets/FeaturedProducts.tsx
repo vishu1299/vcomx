@@ -11,9 +11,17 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTriggers } from "./tabstrigger";
 import { TbTriangleInvertedFilled } from "react-icons/tb";
 import Image from "next/image";
-import { products } from "@/data/Home/home";
+import HomeData   from "@/data/Home/home";
 import { CiHeart } from "react-icons/ci";
 import { LiaCartArrowDownSolid } from "react-icons/lia";
+
+type Product = {
+  id: number;
+  name: string;
+  image: string;
+  price: string;
+  rating:number
+};
 
 const FeaturedProducts = () => {
   return (
@@ -83,7 +91,7 @@ const FeaturedProducts = () => {
                   <CarouselNext className="bg-[#FF6B50] text-white hover:bg-[#FF8672]" />
                 </div>
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -91,7 +99,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg shadow-lg overflow-hidden bg-white">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}
@@ -156,7 +164,7 @@ const FeaturedProducts = () => {
                 </div>
 
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -164,7 +172,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg shadow-lg overflow-hidden bg-white">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}
@@ -228,7 +236,7 @@ const FeaturedProducts = () => {
                   <CarouselNext className="bg-[#FF6B50] text-white hover:bg-[#FF8672]" />
                 </div>
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -236,7 +244,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg overflow-hidden bg-white  border-2 border-[#D6D6D6]">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}
@@ -300,7 +308,7 @@ const FeaturedProducts = () => {
                   <CarouselNext className="bg-[#FF6B50] text-white hover:bg-[#FF8672]" />
                 </div>
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -308,7 +316,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg shadow-lg overflow-hidden bg-white">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}
@@ -373,7 +381,7 @@ const FeaturedProducts = () => {
                   <CarouselNext className="bg-[#FF6B50] text-white hover:bg-[#FF8672]" />
                 </div>
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -381,7 +389,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg shadow-lg overflow-hidden bg-white">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}
@@ -445,7 +453,7 @@ const FeaturedProducts = () => {
                   <CarouselNext className="bg-[#FF6B50] text-white hover:bg-[#FF8672]" />
                 </div>{" "}
                 <CarouselContent className="gap-6">
-                  {products.map((product) => (
+                  {HomeData.featuredProducts.map((product: Product) => (
                     <CarouselItem
                       key={product.id}
                       className="md:basis-1/3 lg:basis-1/3"
@@ -453,7 +461,7 @@ const FeaturedProducts = () => {
                       <div className="relative rounded-lg shadow-lg overflow-hidden bg-white">
                         <div className="relative">
                           <Image
-                            src={product.imageUrl}
+                            src={product.image}
                             alt={product.name}
                             width={337}
                             height={337}

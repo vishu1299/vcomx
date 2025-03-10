@@ -1,5 +1,3 @@
-
-
 "use client";
 import Button from "@/app/_components/button";
 import React from "react";
@@ -12,8 +10,6 @@ import {
 } from "@/components/ui/carousel";
 
 import Image from "next/image";
-import productcard from "/public/Assets/Images/productcard.png";
-import bgcard from "/public/Assets/Images/bagproduct.png";
 
 import { LucideEye } from "lucide-react";
 
@@ -35,7 +31,7 @@ const products: Product[] = [
     originalPrice: 34.99,
     rating: 4,
     reviews: 2,
-    imageUrl: productcard.src,
+    imageUrl: "/src/Assets/Images/productcard.png",
   },
   {
     id: 2,
@@ -44,7 +40,7 @@ const products: Product[] = [
     originalPrice: 30.0,
     rating: 5,
     reviews: 5,
-    imageUrl: productcard.src,
+    imageUrl: "/src/Assets/Images/productcard.png",
   },
   {
     id: 3,
@@ -53,7 +49,7 @@ const products: Product[] = [
     originalPrice: 40.0,
     rating: 3,
     reviews: 8,
-    imageUrl: productcard.src,
+    imageUrl: "/src/Assets/Images/productcard.png",
   },
 ];
 
@@ -71,7 +67,9 @@ const Livenow = () => {
       <div className="w-full flex flex-col md:flex-row gap-6 md:gap-[30px]">
         <div
           className="w-full md:w-[30%] bg-cover bg-center p-6 md:p-[40px]"
-          style={{ backgroundImage: `url(${bgcard.src})` }}
+          style={{
+            backgroundImage: `url("/src/Assets/Images/bagproduct.png")`,
+          }}
         >
           <p className="bg-[#DB4444] px-2 py-1 text-white text-sm font-semibold w-max">
             Save 10%
@@ -100,11 +98,15 @@ const Livenow = () => {
                       />
 
                       <div className="absolute top-3 left-3 rounded-full bg-[#DB4444] px-3 py-1">
-                        <p className="text-white text-sm font-medium">Live Now</p>
+                        <p className="text-white text-sm font-medium">
+                          Live Now
+                        </p>
                       </div>
 
                       <div className="absolute w-[90%] bg-[#FF6F3C] left-1/2 -translate-x-1/2 border-2 border-white p-3 opacity-0 group-hover:opacity-100 group-hover:top-1/2 group-hover:-translate-y-1/2 transition-all duration-500">
-                        <p className="text-center text-white font-bold text-sm">Join Live</p>
+                        <p className="text-center text-white font-bold text-sm">
+                          Join Live
+                        </p>
                       </div>
 
                       <div className="absolute bottom-2 left-3 flex gap-1 bg-[#B1B1B1B2] py-1 px-2 rounded-full text-white text-xs">
@@ -119,7 +121,9 @@ const Livenow = () => {
                           <span
                             key={i}
                             className={`${
-                              i < product.rating ? "text-yellow-500" : "text-gray-300"
+                              i < product.rating
+                                ? "text-yellow-500"
+                                : "text-gray-300"
                             } text-lg`}
                           >
                             ★

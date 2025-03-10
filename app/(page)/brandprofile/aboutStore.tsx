@@ -1,6 +1,5 @@
 import React from "react";
 import { MdOutlinePlayArrow } from "react-icons/md";
-import storeimg from "@/public/assets/Images/brandprofile/store.png";
 
 const AboutStore = () => {
   return (
@@ -22,7 +21,7 @@ const AboutStore = () => {
 
       <div className="relative mt-4">
         <img
-          src={storeimg.src}
+          src="/src/assets/Images/brandprofile/store.png"
           alt="Store"
           className="h-64 md:h-96 lg:h-[574px] w-full rounded-lg object-cover"
         />

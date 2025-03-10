@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import girlimage from "@/public/Assets/Images/lady.png";
+
 import { FiEye } from "react-icons/fi";
 import Image from "next/image";
 
@@ -98,7 +98,7 @@ const Banner = () => {
                     </p>
                     <div className="flex items-center gap-3 mt-2">
                       <Image
-                        src={girlimage}
+                        src="/src/Assets/Images/lady.png"
                         alt="profile"
                         width={35}
                         height={35}
@@ -178,7 +178,7 @@ const Banner = () => {
                   </p>
                   <div className="flex items-center gap-3 mt-2">
                     <Image
-                      src={girlimage}
+                      src="/src/Assets/Images/lady.png"
                       alt="profile"
                       width={35}
                       height={35}

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import succes from "@/public/assets/Images/succeslogo.png";
 
 export default function ForgotPassword() {
   return (
@@ -8,7 +7,7 @@ export default function ForgotPassword() {
       <div className="rounded-lg p-8 w-full max-w-md text-center">
         <div className="text-orange-500 text-5xl mb-4 flex justify-center">
           <Image
-            src={succes}
+            src="/src/Assets/Images/succeslogo.png"
             alt="Success Logo"
             width={100}
             height={100}

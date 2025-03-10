@@ -1,4 +1,3 @@
-import error from "@/public/Assets/Images/error.png";
 import Image from "next/image";
 export default function NotFoundPage() {
   return (
@@ -7,7 +6,12 @@ export default function NotFoundPage() {
       {/* <h2 className="text-[160px] font-bold text-orange leading-none">
         404
       </h2> */}
-      <Image src={error} width={450} height={450} alt="not found" />
+      <Image
+        src="/src/Assets/Images/error.png"
+        width={450}
+        height={450}
+        alt="not found"
+      />
       <div className="flex gap-4 flex-col items-center justify-center">
         <p className="text-black text-4xl font-semibold max-w-2xl">
           Oops! That page can’t be found.

@@ -11,8 +11,7 @@ import {
   FaBars,
   FaArrowLeft,
 } from "react-icons/fa";
-import cart from "@/public/Assets/Images/cart.png";
-import lady from "@/public/Assets/Images/lady.png";
+
 
 const initialMessages = [
   {
@@ -127,7 +126,7 @@ export default function ChatUI() {
               <Image
                 width={30}
                 height={30}
-                src={cart}
+                src="/src/Assets/Images/cart.png"
                 alt="Product"
                 className="rounded-md"
               />
@@ -188,7 +187,7 @@ export default function ChatUI() {
                 <Image
                   width={30}
                   height={30}
-                  src={lady}
+                  src="/src/Assets/Images/lady.png"
                   alt="Customer"
                   className="rounded-full border-2 border-blue-500"
                 />
@@ -246,7 +245,7 @@ export default function ChatUI() {
             <Image
               width={120}
               height={120}
-              src={cart}
+              src="/src/Assets/Images/cart.png"
               alt="Product"
               className="rounded-md"
             />
@@ -307,7 +306,7 @@ export default function ChatUI() {
               <Image
                 width={30}
                 height={30}
-                src={lady}
+                src="/src/Assets/Images/lady.png"
                 alt="Customer"
                 className="rounded-full border-2 border-blue-500"
               />
@@ -354,7 +353,7 @@ export default function ChatUI() {
           <Image
             width={30}
             height={30}
-            src={lady}
+            src="/src/Assets/Images/lady.png"
             alt="Support Agent"
             className="rounded-full w-10 h-10 border-2 border-blue-500"
           />
@@ -378,7 +377,7 @@ export default function ChatUI() {
                   <Image
                     width={30}
                     height={30}
-                    src={lady}
+                    src="/src/Assets/Images/lady.png"
                     alt="Avatar"
                     className="w-8 h-8 rounded-full mr-2 self-end"
                   />
@@ -403,7 +402,7 @@ export default function ChatUI() {
                   <Image
                     width={30}
                     height={30}
-                    src={lady}
+                    src="/src/Assets/Images/lady.png"
                     alt="Avatar"
                     className="w-8 h-8 rounded-full ml-2 self-end"
                   />

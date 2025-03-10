@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import lady from "@/public/Assets/Images/lady.png";
 import {
   FiEdit,
   FiShoppingBag,
@@ -74,7 +73,7 @@ const UserDashboard: React.FC = () => {
               <div className="flex flex-col items-center -mt-12 pb-4 px-4">
                 <div className="rounded-full overflow-hidden border-4 border-white w-24 h-24">
                   <Image
-                    src={lady}
+                    src="/src/Assets/Images/lady.png"
                     width={96}
                     height={96}
                     alt="Alex Coal"

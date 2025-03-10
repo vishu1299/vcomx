@@ -11,8 +11,7 @@ import {
   ShoppingBag,
   ShoppingCart,
 } from "lucide-react";
-import productreel from "@/public/Assets/Images/productreel.png";
-import lady from "@/public/Assets/Images/lady.png";
+
 import { FaPlay } from "react-icons/fa";
 import Link from "next/link";
 
@@ -43,7 +42,7 @@ const ProductPageReplica = () => {
         {/* Left Side - Product Image */}
         <div className="w-full lg:w-1/2 relative">
           <div
-            style={{ backgroundImage: `url(${productreel.src})` }}
+            style={{ backgroundImage: `url("/src/Assets/Images/lady.png")` }}
             className="h-[400px] sm:h-[500px] lg:h-[600px] bg-cover bg-center rounded-xl relative"
           >
             {/* Top Overlay */}
@@ -53,7 +52,7 @@ const ProductPageReplica = () => {
                 <div className="flex items-center bg-[#eadcdb]/70 p-2 rounded-3xl space-x-2">
                   <Link href="/storeProfile">
                     <Image
-                      src={lady}
+                      src="/src/Assets/Images/lady.png"
                       alt="Roxana Michelle"
                       width={40}
                       height={40}
@@ -107,7 +106,7 @@ const ProductPageReplica = () => {
         <div className="hidden lg:flex justify-between items-center w-fit">
           <div className="flex flex-col space-y-4 border-2 border-[#dddddd] rounded-3xl p-3">
             <Image
-              src={lady}
+              src="/src/Assets/Images/lady.png"
               alt="Roxana Michelle"
               width={40}
               height={40}

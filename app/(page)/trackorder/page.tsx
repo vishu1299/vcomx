@@ -9,7 +9,6 @@ import {
   FaShippingFast,
 } from "react-icons/fa";
 import { Card } from "@/components/ui/card";
-import map from "@/public/Assets/Images/map.png";
 
 const OrderTracking = () => {
   // Order items
@@ -158,7 +157,7 @@ const OrderTracking = () => {
         {/* Map */}
         <div className="w-full h-32 sm:h-40 md:h-48 bg-gray-200 rounded-lg overflow-hidden mb-6">
           <Image
-            src={map}
+            src="/src/Assets/Images/map.png"
             alt="Delivery Map"
             width={800}
             height={300}

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "@/public/Assets/Images/Logo.png";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -126,7 +125,13 @@ const Headermenu = () => {
         </div>
 
         <div className="flex justify-start items-center gap-[20px] w-[50%] lg:w-[20%]">
-          <Image src={Logo} alt="" width={190} height={42} className="w-full" />
+          <Image
+            src="/src/Assets/Images/Logo.png"
+            alt=""
+            width={190}
+            height={42}
+            className="w-full"
+          />
         </div>
 
         <div className="lg:flex md:hidden hidden justify-center items-center w-[60%]">

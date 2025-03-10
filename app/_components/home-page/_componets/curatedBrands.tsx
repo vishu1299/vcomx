@@ -96,7 +96,7 @@ const brands: BrandItem[] = [
     size: "200 ML",
   },
   {
-    bg: "/src/assets/Images/CURATEDBRANDS/Background (2).png",
+    bg: "/src/assets/Images/CURATEDBRANDS/Background (2).png" ,
     fg: "/src/assets/Images/CURATEDBRANDS/Frame 32.png",
     name: "LOREM",
     size: "200 ML",

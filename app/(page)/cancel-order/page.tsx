@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import cart from "@/public/Assets/Images/cart.png";
+// import cart from "@/public/Assets/Images/cart.png";
 
 export default function CancelOrder() {
   const [reason, setReason] = useState("");
@@ -31,7 +31,7 @@ export default function CancelOrder() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-4">
             <div className="flex-shrink-0">
               <Image
-                src={cart}
+                src="Assets/Images/cart.png"
                 alt="Product"
                 width={120}
                 height={120}

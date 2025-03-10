@@ -1,5 +1,5 @@
 import Image from "next/image";
-import confirm from "@/public/Assets/Images/confirm.png";
+// import confirm from "@/public/Assets/Images/confirm.png";
 export default function OrderConfirmation() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center  p-4">
@@ -8,7 +8,7 @@ export default function OrderConfirmation() {
         <div className="flex justify-center mb-4">
           <div className="w-16 h-16  flex items-center justify-center">
             <Image
-              src={confirm}
+              src="Assets/Images/confirm.png"
               width={70}
               height={70}
               alt="Picture of the Confirmation"

@@ -21,13 +21,13 @@ const Headermenu = () => {
   const [cartOpen, setCartOpen] = useState(false);
   const cartItems = [
     {
-      image: "/assets/Images/glasses1.png",
+      image: "/src/assets/Images/glasses1.png",
       name: "Fashion Glasses Sunny Premium",
       price: 25,
       quantity: 2,
     },
     {
-      image: "/assets/Images/glasses2.png",
+      image: "/src/assets/Images/glasses2.png",
       name: "Apple Watch Series 5 MWV62VN/A",
       price: 517.79,
       quantity: 2,
@@ -56,7 +56,7 @@ const Headermenu = () => {
     return (
       <div className="flex items-center gap-4 border-b pb-4">
         <Image
-          src={"/Assets/images/cart.png"}
+          src={"/src/Assets/images/cart.png"}
           alt="Cart"
           width={100}
           height={100}

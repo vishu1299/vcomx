@@ -9,62 +9,62 @@ const customersCommentsData = [
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-1.png",
+    image: "/src/assets/Images/customersComments/customer-img-1.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-2.png",
+    image: "/src/assets/Images/customersComments/customer-img-2.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-3.png",
+    image: "/src/assets/Images/customersComments/customer-img-3.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-4.png",
+    image: "/src/assets/Images/customersComments/customer-img-4.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-5.png",
+    image: "/src/assets/Images/customersComments/customer-img-5.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-6.png",
+    image: "/src/assets/Images/customersComments/customer-img-6.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-1.png",
+    image: "/src/assets/Images/customersComments/customer-img-1.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-2.png",
+    image: "/src/assets/Images/customersComments/customer-img-2.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-3.png",
+    image: "/src/assets/Images/customersComments/customer-img-3.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-4.png",
+    image: "/src/assets/Images/customersComments/customer-img-4.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-5.png",
+    image: "/src/assets/Images/customersComments/customer-img-5.png",
   },
   {
     title: "Maria Nyla",
     profe: "student",
-    image: "/assets/Images/customersComments/customer-img-6.png",
+    image: "/src/assets/Images/customersComments/customer-img-6.png",
   },
 ];
 const CustomersComments = () => {
@@ -95,7 +95,7 @@ const CustomersComments = () => {
         </p>
         <div className="relative  text-lg font-medium leading-relaxed">
           <img
-            src="/assets/Images/customersComments/CustomersComments-1.svg"
+            src="/src/assets/Images/customersComments/CustomersComments-1.svg"
             alt="Quote Open"
             className="absolute -top-2 left-0 w-8 md:w-12"
           />
@@ -117,7 +117,7 @@ const CustomersComments = () => {
             </p>
           </div>
           <img
-            src="/assets/Images/customersComments/customersComments-icon.svg"
+            src="/src/assets/Images/customersComments/customersComments-icon.svg"
             alt="Quote Close"
             className="absolute   top-0 right-0 w-8 md:w-12"
           />

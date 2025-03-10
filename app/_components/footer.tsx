@@ -19,7 +19,7 @@ function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-white">
-                  <img src="/assets/Images/footer/call-1.svg" alt="Call" />
+                  <img src="/src/assets/Images/footer/call-1.svg" alt="Call" />
                 </div>
                 <div>
                   <p className="font-Oswald font-normal text-[#FFFFFF] text-[21px]">
@@ -34,7 +34,7 @@ function Footer() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-white">
-                  <img src="/assets/Images/footer/gmai-1.svg" alt="Email" />
+                  <img src="/src/assets/Images/footer/gmai-1.svg" alt="Email" />
                 </div>
                 <div>
                   <p className="font-Oswald font-normal text-[#FFFFFF] text-[21px]">

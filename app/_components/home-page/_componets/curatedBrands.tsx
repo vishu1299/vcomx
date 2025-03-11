@@ -57,7 +57,7 @@ const services: Service[] = [
   {
     title: "Shipping Worldwide",
     description: "We ship products worldwide.",
-    serviceIcon: "/src/Assets/Images/Delivery-Truck1.png",
+    serviceIcon: "/src/Assets/Images/delivery-truck1.png",
   },
 ];
 

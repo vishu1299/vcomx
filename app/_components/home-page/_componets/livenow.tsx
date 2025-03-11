@@ -56,7 +56,7 @@ const products: Product[] = [
 const Livenow = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-[120px]">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-[40px]">
         <h2 className="font-Oswald font-semibold text-[32px] md:text-[44px] leading-[40px] md:leading-[52px]">
           Live Now
         </h2>

@@ -5,12 +5,11 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
-import { TbPhoneCalling } from "react-icons/tb";
 
 interface Service {
   title: string;
   description: string;
-  serviceIcon: React.ReactNode;
+  serviceIcon: string;
 }
 
 interface BrandItem {
@@ -43,22 +42,22 @@ const services: Service[] = [
   {
     title: "24/7 Customer Service",
     description: "We're here to help you with any questions 24/7.",
-    serviceIcon: <TbPhoneCalling />,
+    serviceIcon: "/src/Assets/Images/phone-call.png",
   },
   {
     title: "14-Day Money Back",
     description: "If not satisfied, return within 14 days for a refund.",
-    serviceIcon: <TbPhoneCalling />,
+    serviceIcon: "/src/Assets/Images/Return.png",
   },
   {
     title: "Our Guarantee",
     description: "We stand behind our products.",
-    serviceIcon: <TbPhoneCalling />,
+    serviceIcon: "/src/Assets/Images/guarantee.png",
   },
   {
     title: "Shipping Worldwide",
     description: "We ship products worldwide.",
-    serviceIcon: <TbPhoneCalling />,
+    serviceIcon: "/src/Assets/Images/Delivery-Truck1.png",
   },
 ];
 
@@ -196,9 +195,9 @@ const CuratedBrands: React.FC = () => {
       </div>
 
       <div className="flex  flex-col md:flex-row gap-4 w-full max-w-6xl p-8 mt-6">
-        <div className="relative bg-orange-200 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
+        <div className="relative bg-orange/70 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
           <Image
-            src="/src/Assets/Images/CURATEDBRANDS/brewier.jpeg"
+            src="/src/Assets/Images/CURATEDBRANDS/brad1.jpeg"
             alt="Product Image"
             layout="fill"
             objectFit="cover"
@@ -216,7 +215,7 @@ const CuratedBrands: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative bg-gray-300 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
+        <div className="relative bg-gray-700 p-5 rounded-lg overflow-hidden flex items-end h-[400px] w-full md:w-1/2">
           <Image
             src="/src/Assets/Images/CURATEDBRANDS/brewier.jpeg"
             alt="Product Image"
@@ -242,11 +241,17 @@ const CuratedBrands: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8 bg-white p-5 rounded-lg shadow w-full max-w-6xl">
         {services.map((service, index) => (
           <div key={index} className="text-center flex flex-col items-center">
-            <p className="w-12 h-12 mb-2">{service.serviceIcon}</p>
-            <p className="text-lg font-semibold text-[#121212]">
+            <Image
+              src={service.serviceIcon}
+              width={50}
+              height={50}
+              alt="Picture of the author"
+            />
+            {/* <p className="w-12 h-12 mb-2">{service.serviceIcon}</p> */}
+            <p className="text-lg font-semibold text-[#121212] mt-3 text-end">
               {service.title}
             </p>
-            <p className="text-xs text-[#5E6267]">{service.description}</p>
+            <p className="text-xs text-[#5E6267] ">{service.description}</p>
           </div>
         ))}
       </div>

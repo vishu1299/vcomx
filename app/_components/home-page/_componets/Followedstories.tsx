@@ -5,30 +5,30 @@ import Link from "next/link";
 
 const stores = [
   {
-    name: "Running Shoes",
+    name: "Flowers",
     count: 54,
     image: "/src/Assets/Images/stories/stories-1.png",
   },
   {
-    name: "Running Clothes",
+    name: "Running Watch",
     count: 40,
-    image: "/src/Assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/Categories2.png",
     live: true,
   },
   {
-    name: "Running Watch",
-    count: 16,
-    image: "/src/Assets/Images/stories/stories-1.png",
-  },
-  {
     name: "Accessory",
-    count: 22,
-    image: "/src/Assets/Images/stories/stories-1.png",
+    count: 16,
+    image: "/src/Assets/Images/Categories3.png",
   },
   {
     name: "Cosmetics",
+    count: 22,
+    image: "/src/Assets/Images/Categories4.png",
+  },
+  {
+    name: "Makeup",
     count: 17,
-    image: "/src/Assets/Images/stories/stories-1.png",
+    image: "/src/Assets/Images/productcard.png",
   },
 ];
 

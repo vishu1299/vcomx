@@ -26,7 +26,7 @@ function Footer() {
                       Call us 24/7
                     </p>
                     <p className="font-Oswald font-normal text-[#FFFFFF] text-[25px]">
-                      +3 398 356 4793
+                      +1 (208) 703-6484
                     </p>
                   </div>
                 </div>
@@ -90,11 +90,11 @@ function Footer() {
                   Categories
                 </p>
                 <ul className="space-y-1 text-[#B8BEC2] text-[15px] font-Oswald font-normal">
-                  <li>Vegetable</li>
-                  <li>Fresh Fruits</li>
-                  <li>Fresh Meats</li>
-                  <li>Grain & Nuts</li>
-                  <li>Smoothie</li>
+                  <li>Promotions</li>
+                  <li>Sweatshirts</li>
+                  <li>Jackets</li>
+                  <li>Denim Jeans</li>
+                  <li>Swimwear</li>
                 </ul>
               </div>
               <div>
@@ -114,9 +114,9 @@ function Footer() {
                   Contact info
                 </p>
                 <ul className="space-y-1 text-[#B8BEC2] text-[15px] font-Oswald font-normal">
-                  <li>29 Rue du Bourg Tibourg,</li>
-                  <li>75004 Paris, France</li>
-                  <li>MallShopping@gmail.com</li>
+                  <li>E 516 Goma Plaza </li>
+                  <li>sector 7 dwarka, New Delhi</li>
+                  <li>info@xcrino.com</li>
                 </ul>
               </div>
             </div>
@@ -125,7 +125,7 @@ function Footer() {
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center text-[#FFFFFF] font-Oswald font-normal border-t bg-[#FF6F3C] text-[15px] border-gray-700 py-3 px-6 md:px-16">
         <p className="text-center md:text-left">
-          Copyright © 2020 Avitexthemes Inc. All rights reserved
+          Copyright © 2025 Xcrino Business Solutions Inc. All rights reserved
         </p>
         <div className="flex space-x-4 mt-2 md:mt-0">
           <FaFacebookF className="hover:text-white cursor-pointer" />

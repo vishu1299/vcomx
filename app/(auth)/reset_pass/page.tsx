@@ -30,7 +30,7 @@ export default function ForgotPassword() {
             className="text-[#FF6F3C]"
           />
         </div>
-        <h2 className="text-2xl font-semibold mb-2 text-[#1F1D2B]">
+        <h2 className="text-2xl font-bold mb-2 text-[#1F1D2B]">
           Forgot Your Password?
         </h2>
         <p className="text-[#555555] mb-6">

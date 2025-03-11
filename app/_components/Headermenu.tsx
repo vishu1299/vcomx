@@ -16,6 +16,7 @@ import { CiSearch } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import { LogIn } from "lucide-react";
 
 const Headermenu = () => {
   const [cartOpen, setCartOpen] = useState(false);
@@ -174,17 +175,25 @@ const Headermenu = () => {
               <CiSearch className="text-2xl md:text-4xl lg:text-4xl" />
             </span>
           </div>
+          <Link href="/signIn">
+            <div className="flex justify-center items-center flex-col">
+              <span>
+                <LogIn size={30} className=" md:text-3xl lg:text-4xl" />
+              </span>
+              <p className="text-center hidden md:block lg:block">Signin</p>
+            </div>
+          </Link>
           <Link href="/user-account">
             <div className="flex justify-center items-center flex-col">
               <span>
-                <GoPerson className=" md:text-3xl lg:text-4xl" />
+                <GoPerson size={30} className=" md:text-3xl lg:text-4xl" />
               </span>
               <p className="text-center hidden md:block lg:block">Account</p>
             </div>
           </Link>
           <div className="flex justify-center items-center flex-col">
             <span>
-              <FaRegHeart className=" md:text-3xl lg:text-4xl" />
+              <FaRegHeart size={30} className=" md:text-3xl lg:text-4xl" />
             </span>
             <p className="text-center hidden md:block lg:block">Wishlist</p>
           </div>

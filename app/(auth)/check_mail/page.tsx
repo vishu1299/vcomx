@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OtpScreen() {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -43,9 +44,7 @@ export default function OtpScreen() {
             className="text-[#FF6F3C]"
           />
         </div>
-        <h2 className="text-2xl font-semibold mb-2 text-[#1F1D2B]">
-          Enter OTP
-        </h2>
+        <h2 className="text-2xl font-bold mb-2 text-[#1F1D2B]">Enter OTP</h2>
         <p className="text-[#555555] mb-6">
           Weve sent a password OTP to your email. Please check your inbox and
           follow the instructions.
@@ -62,9 +61,11 @@ export default function OtpScreen() {
             />
           ))}
         </div>
-        <button className="w-full bg-[#FF6F3C] text-white py-3 rounded-lg hover:bg-orange-600 transition font-semibold mb-4">
-          Continue
-        </button>
+        <Link href="/create_new">
+          <button className="w-full bg-[#FF6F3C] text-white py-3 rounded-lg hover:bg-orange-600 transition font-semibold mb-4">
+            Continue
+          </button>
+        </Link>
         <p className="text-gray-600 text-sm">
           {canResend ? (
             <button

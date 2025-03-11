@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ForgotPassword() {
   return (
@@ -14,17 +15,18 @@ export default function ForgotPassword() {
             className="text-[#FF6F3C]"
           />
         </div>
-        <h2 className="text-2xl font-semibold mb-2 text-[#1F1D2B]">
+        <h2 className="text-2xl font-bold mb-2 text-[#1F1D2B]">
           Password Reset Successfully
         </h2>
         <p className="text-[#555555] mb-6">
           You have successfully confirmed your new password. Please use your new
           password when logging in.
         </p>
-
-        <button className="w-full bg-[#FF6F3C] text-white py-2 rounded-lg hover:bg-orange-600 transition">
-          Back To Login
-        </button>
+        <Link href="/signIn">
+          <button className="w-full bg-[#FF6F3C] text-white py-2 rounded-lg hover:bg-orange-600 transition">
+            Back To Login
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -127,6 +127,7 @@ const bestSellersData: BestSellerItem[] = [
 ];
 
 const users = [
+  
   {
     name: "Miracle",
     followers: "327K",
@@ -259,7 +260,7 @@ const AllSearchResult = () => {
                 {user.followers} followers
               </p>
             </div>
-            <button className="bg-[#FF6F3C] text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            <button className="bg-[#FF6F3C] text-white px-6 py-2 rounded-3xl hover:bg-orange-600">
               Follow
             </button>
           </div>

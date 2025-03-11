@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import AllSearchResult from "./allsearchResult";
+import Stores from "./stores";
+import Search_videos from "./searchvideos";
 
 const SearchNavbar = () => {
   const [activeTab, setActiveTab] = useState("All");
@@ -27,8 +29,10 @@ const SearchNavbar = () => {
             </div>
           ))}
         </div>
+        <div className="mt-4">{activeTab === "All" && <AllSearchResult />}</div>
+        <div className="mt-4">{activeTab === "Stores" && <Stores />}</div>
         <div className="mt-4">
-          {activeTab === "All" && <AllSearchResult />}
+          {activeTab === "Videos" && <Search_videos />}
         </div>
       </div>
     </div>

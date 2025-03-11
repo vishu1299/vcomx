@@ -6,6 +6,7 @@ import {
   ChevronDown,
   ChevronUp,
   Heart,
+  Maximize,
   MessageCircle,
   Share2,
   ShoppingBag,
@@ -28,7 +29,7 @@ const ProductPageReplica = () => {
 
   return (
     <div className="flex justify-center items-center w-full bg-[#f8f8f8] p-4 min-h-screen">
-      <div className="flex flex-col lg:flex-row gap-6 max-w-4xl mx-auto w-full">
+      <div className="flex flex-col lg:flex-row gap-6 max-w-5xl mx-auto w-full">
         {/* Chevron Buttons - Hidden on mobile, shown on larger screens */}
         <div className="hidden lg:flex justify-center flex-col space-y-5 self-center">
           <div className="bg-orange w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
@@ -73,8 +74,15 @@ const ProductPageReplica = () => {
                     Follow
                   </button>
                 </div>
-                <div className="text-orange bg-[#eadcdb]/70 p-2 sm:p-3 rounded-full">
-                  <ShoppingCart className="w-4 h-4 sm:w-6 sm:h-6" />
+                <div className="flex gap-6">
+                  <div className="text-white rounded-full">
+                    <ShoppingCart className="w-4 h-4 sm:w-6 sm:h-6" />
+                  </div>
+                  <Link href="/fullpagereel">
+                    <div className="text-white  rounded-full">
+                      <Maximize className="w-4 h-4 sm:w-6 sm:h-6" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

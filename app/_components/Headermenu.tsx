@@ -100,10 +100,10 @@ const Headermenu = () => {
                 <SelectItem value="All products">All products</SelectItem>
                 <SelectItem value="Technology">Technology</SelectItem>
                 <SelectItem value="Home Decor">Home Decor</SelectItem>
-                <SelectItem value="Fitness">Travel </SelectItem>
-                <SelectItem value="Fitness">Accessories</SelectItem>
-                <SelectItem value="Fitness">Equipment</SelectItem>
-                <SelectItem value="Fitness">Fashion</SelectItem>
+                <SelectItem value="Travel">Travel </SelectItem>
+                <SelectItem value="Accessories">Accessories</SelectItem>
+                <SelectItem value="Equipment">Equipment</SelectItem>
+                <SelectItem value="Fashion">Fashion</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -154,10 +154,10 @@ const Headermenu = () => {
                 <SelectItem value="All products">All products</SelectItem>
                 <SelectItem value="Technology">Technology</SelectItem>
                 <SelectItem value="Home Decor">Home Decor</SelectItem>
-                <SelectItem value="Fitness">Travel </SelectItem>
-                <SelectItem value="Fitness">Accessories</SelectItem>
-                <SelectItem value="Fitness">Equipment</SelectItem>
-                <SelectItem value="Fitness">Fashion</SelectItem>
+                <SelectItem value="Travel">Travel </SelectItem>
+                <SelectItem value="Accessories">Accessories</SelectItem>
+                <SelectItem value="Equipment">Equipment</SelectItem>
+                <SelectItem value="Fashion">Fashion</SelectItem>
               </SelectContent>
             </Select>
           </div>

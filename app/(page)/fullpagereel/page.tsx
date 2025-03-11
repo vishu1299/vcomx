@@ -101,7 +101,7 @@ const Fullpagereel = () => {
           <div className="w-full mx-auto p-4 rounded-xl border border-gray-200 shadow-sm bg-white mb-3">
             <div className="flex items-center gap-3">
               {/* Profile Image */}
-              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden">
                 <Image
                   src="/src/Assets/Images/lady.png"
                   alt="Profile"

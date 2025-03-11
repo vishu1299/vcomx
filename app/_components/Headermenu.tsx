@@ -21,13 +21,13 @@ const Headermenu = () => {
   const [cartOpen, setCartOpen] = useState(false);
   const cartItems = [
     {
-      image: "/src/Assets/Images/glasses1.png",
+      image: "/src/Assets/Images/cart.png",
       name: "Fashion Glasses Sunny Premium",
       price: 25,
       quantity: 2,
     },
     {
-      image: "/src/Assets/Images/glasses2.png",
+      image: "/src/Assets/Images/cart.png",
       name: "Apple Watch Series 5 MWV62VN/A",
       price: 517.79,
       quantity: 2,

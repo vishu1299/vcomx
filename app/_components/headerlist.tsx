@@ -118,7 +118,7 @@ const Headerlist = () => {
   };
 
   return (
-    <div className="w-full h-auto lg:h-[70px] sm:h-[60px] h-[50px] flex flex-wrap relative bg-[#142535] shadow-md">
+    <div className="w-full h-auto lg:h-[70px] sm:h-[60px]  flex flex-wrap relative bg-[#142535] shadow-md">
       {/* Category Dropdown Button */}
       <div
         ref={dropdownRef}

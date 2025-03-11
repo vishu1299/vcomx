@@ -122,7 +122,7 @@ const Headermenu = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-3 sm:py-4 md:py-5">
+    <div className="container mx-auto  py-3 sm:py-4 md:py-5">
       <div className="flex justify-between items-center w-full relative">
         {/* Mobile Search Bar Overlay */}
         {searchbar && (

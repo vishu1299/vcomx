@@ -56,7 +56,7 @@ const Headermenu = () => {
     return (
       <div className="flex items-center gap-4 border-b pb-4">
         <Image
-          src="/src/Assets/images/cart.png"
+          src="/src/Assets/Images/cart.png"
           alt="Cart"
           width={100}
           height={100}

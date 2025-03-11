@@ -42,7 +42,9 @@ const ProductPageReplica = () => {
         {/* Left Side - Product Image */}
         <div className="w-full lg:w-1/2 relative">
           <div
-            style={{ backgroundImage: `url("/src/Assets/Images/lady.png")` }}
+            style={{
+              backgroundImage: `url("/src/Assets/Images/products/product-1.jpeg")`,
+            }}
             className="h-[400px] sm:h-[500px] lg:h-[600px] bg-cover bg-center rounded-xl relative"
           >
             {/* Top Overlay */}
@@ -50,7 +52,7 @@ const ProductPageReplica = () => {
             <div className="absolute top-4 left-4 right-4 z-10">
               <div className="flex justify-between items-center">
                 <div className="flex items-center bg-[#eadcdb]/70 p-2 rounded-3xl space-x-2">
-                  <Link href="/storeProfile">
+                  <Link href="/storeProfile" className="flex gap-1">
                     <Image
                       src="/src/Assets/Images/lady.png"
                       alt="Roxana Michelle"

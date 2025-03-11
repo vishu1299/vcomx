@@ -10,6 +10,7 @@ import {
   X,
   Ellipsis,
   VolumeX,
+  Clock,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { FaPlay } from "react-icons/fa";
@@ -97,6 +98,53 @@ const Fullpagereel = () => {
 
         {/* Right Side - Product Details */}
         <div className="w-full lg:w-1/2 bg-white p-4 sm:p-6 h-full flex flex-col">
+          <div className="w-full mx-auto p-4 rounded-xl border border-gray-200 shadow-sm bg-white mb-3">
+            <div className="flex items-center gap-3">
+              {/* Profile Image */}
+              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                <Image
+                  src="/src/Assets/Images/lady.png"
+                  alt="Profile"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              {/* Profile Info */}
+              <div className="flex-1">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h2 className="font-bold text-base text-gray-900">
+                      Natalya Undergrowth
+                    </h2>
+                    <p className="text-sm text-gray-700">New York</p>
+                  </div>
+
+                  {/* Follow Button */}
+                  <button className="bg-orange hover:bg-orange transition-colors text-white text-sm font-medium px-5 py-1.5 rounded-full">
+                    Follow
+                  </button>
+                </div>
+
+                {/* Release Date */}
+                <div className="flex items-center mt-1">
+                  <div className="flex items-center text-xs text-gray-500 bg-gray-100 rounded-full px-2 py-0.5">
+                    <Clock size={12} className="mr-1 text-gray-500" />
+                    <span>10 Feb 2022 release</span>
+                  </div>
+                </div>
+
+                {/* Tags */}
+                <div className="mt-2 text-xs text-gray-700">
+                  <span>Tips & Tricks</span>
+                  <span className="mx-1">•</span>
+                  <span className="text-amber-500">#beauties</span>
+                  <span className="text-amber-500">#fashion</span>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* Tabs */}
           <div className="flex justify-between mb-4 border-b">
             <div
@@ -123,86 +171,87 @@ const Fullpagereel = () => {
 
           {/* Tab Content Container with Consistent Height */}
           <div className="flex-grow flex flex-col">
-            {/* Conditional Rendering Based on Active Tab */}
             {activeTab === "Product Details" && (
-              <div className="flex-grow flex flex-col">
-                {/* Product Title and Price */}
-                <div className="flex justify-between items-center mb-4">
-                  <div>
-                    <h1 className="text-lg sm:text-xl font-bold text-gray-800">
-                      Premium Watch Collection
-                    </h1>
-                    <p className="text-orange text-xl sm:text-2xl font-bold mt-1">
-                      $299.99
-                    </p>
+              <>
+                <div className="flex-grow flex flex-col">
+                  {/* Product Title and Price */}
+                  <div className="flex justify-between items-center mb-4">
+                    <div>
+                      <h1 className="text-lg sm:text-xl font-bold text-gray-800">
+                        Premium Watch Collection
+                      </h1>
+                      <p className="text-orange text-xl sm:text-2xl font-bold mt-1">
+                        $299.99
+                      </p>
+                    </div>
+                    <BookmarkMinus className="text-gray-500 w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <BookmarkMinus className="text-gray-500 w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
 
-                {/* Product Description */}
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">
-                  Elegant timepiece featuring premium materials, water
-                  resistance, and sophisticated design. Perfect for both casual
-                  and formal occasions.
-                </p>
+                  {/* Product Description */}
+                  <p className="text-xs sm:text-sm text-gray-600 mt-2">
+                    Elegant timepiece featuring premium materials, water
+                    resistance, and sophisticated design. Perfect for both
+                    casual and formal occasions.
+                  </p>
 
-                {/* Gallery */}
-                <div className="mb-4 mt-4">
-                  <h3 className="text-base sm:text-lg font-semibold mb-2">
-                    Gallery
-                  </h3>
-                  <div className="flex space-x-2">
-                    {galleryImages.map((img, index) => (
-                      <Image
-                        key={index}
-                        src={img}
-                        alt={`Gallery ${index + 1}`}
-                        width={70}
-                        height={70}
-                        className="rounded-lg w-14 h-14 sm:w-16 sm:h-16 object-cover"
-                      />
-                    ))}
+                  {/* Gallery */}
+                  <div className="mb-4 mt-4">
+                    <h3 className="text-base sm:text-lg font-semibold mb-2">
+                      Gallery
+                    </h3>
+                    <div className="flex space-x-2">
+                      {galleryImages.map((img, index) => (
+                        <Image
+                          key={index}
+                          src={img}
+                          alt={`Gallery ${index + 1}`}
+                          width={70}
+                          height={70}
+                          className="rounded-lg w-14 h-14 sm:w-16 sm:h-16 object-cover"
+                        />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Volume Selection */}
+                  <div className="mb-4">
+                    <h3 className="text-base sm:text-lg font-semibold mb-2">
+                      Volume
+                    </h3>
+                    <div className="flex space-x-2">
+                      {["50ml", "100ml", "70ml"].map((volume) => (
+                        <button
+                          key={volume}
+                          onClick={() => setSelectedVolume(volume)}
+                          className={`
+                        px-3 py-1 sm:px-4 sm:py-2 rounded text-xs sm:text-sm
+                        ${
+                          selectedVolume === volume
+                            ? "bg-black text-white"
+                            : "bg-white text-black border border-gray-300"
+                        }
+                          `}
+                        >
+                          {volume}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons - Pushed to the bottom with flex-grow */}
+                  <div className="mt-auto space-y-2">
+                    <button className="w-full bg-orange text-white py-2 sm:py-3 rounded text-sm sm:text-base">
+                      BUY NOW
+                    </button>
+                    <button className="w-full border border-orange text-orange py-2 sm:py-3 rounded text-sm sm:text-base">
+                      ADD TO CART
+                    </button>
+                    <button className="w-full text-gray-600 py-2 text-sm sm:text-base">
+                      Share
+                    </button>
                   </div>
                 </div>
-
-                {/* Volume Selection */}
-                <div className="mb-4">
-                  <h3 className="text-base sm:text-lg font-semibold mb-2">
-                    Volume
-                  </h3>
-                  <div className="flex space-x-2">
-                    {["50ml", "100ml", "70ml"].map((volume) => (
-                      <button
-                        key={volume}
-                        onClick={() => setSelectedVolume(volume)}
-                        className={`
-                               px-3 py-1 sm:px-4 sm:py-2 rounded text-xs sm:text-sm
-                               ${
-                                 selectedVolume === volume
-                                   ? "bg-black text-white"
-                                   : "bg-white text-black border border-gray-300"
-                               }
-                             `}
-                      >
-                        {volume}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Action Buttons - Pushed to the bottom with flex-grow */}
-                <div className="mt-auto space-y-2">
-                  <button className="w-full bg-orange text-white py-2 sm:py-3 rounded text-sm sm:text-base">
-                    BUY NOW
-                  </button>
-                  <button className="w-full border border-orange text-orange py-2 sm:py-3 rounded text-sm sm:text-base">
-                    ADD TO CART
-                  </button>
-                  <button className="w-full text-gray-600 py-2 text-sm sm:text-base">
-                    Share
-                  </button>
-                </div>
-              </div>
+              </>
             )}
 
             {/* Reviews Tab Content */}

@@ -157,7 +157,7 @@ const OrderTracking = () => {
         {/* Map */}
         <div className="w-full h-32 sm:h-40 md:h-48 bg-gray-200 rounded-lg overflow-hidden mb-6">
           <Image
-            src="/src/src/Assets/Images/map.png"
+            src="/src/Assets/Images/map.png"
             alt="Delivery Map"
             width={800}
             height={300}

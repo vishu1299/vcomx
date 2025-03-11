@@ -91,13 +91,19 @@ const Headermenu = () => {
           <div className="bg-[#142535] lg:w-[200px] w-[120px] p-[6px] rounded-l-md">
             <Select>
               <SelectTrigger className="font-Oswald text-[#fff] font-bold lg:text-[16px] text-[10px] leading-[26px] w-full border-none outline-none lg:h-[40px] h-[25px] bg-transparent flex justify-between items-center">
-                <SelectValue placeholder="All Categories" />
+                <SelectValue
+                  className="placeholder:text-white"
+                  placeholder="All Categories"
+                />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="profile">Profile</SelectItem>
-                <SelectItem value="billing">Billing</SelectItem>
-                <SelectItem value="team">Team</SelectItem>
-                <SelectItem value="subscription">Subscription</SelectItem>
+                <SelectItem value="All products">All products</SelectItem>
+                <SelectItem value="Technology">Technology</SelectItem>
+                <SelectItem value="Home Decor">Home Decor</SelectItem>
+                <SelectItem value="Fitness">Travel </SelectItem>
+                <SelectItem value="Fitness">Accessories</SelectItem>
+                <SelectItem value="Fitness">Equipment</SelectItem>
+                <SelectItem value="Fitness">Fashion</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -139,13 +145,19 @@ const Headermenu = () => {
           <div className="bg-[#142535] w-[200px] p-[6px] rounded-[6px_0px_0px_6px]">
             <Select>
               <SelectTrigger className="font-Oswald text-[#fff] font-bold lg:text-[16px] text-[10px] leading-[26px] w-full border-none outline-none lg:h-[40px] h-[25px] bg-transparent flex justify-between items-center">
-                <SelectValue placeholder="All Categories" />
+                <SelectValue
+                  className="placeholder:text-white"
+                  placeholder="All Categories"
+                />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="profile">Profile</SelectItem>
-                <SelectItem value="billing">Billing</SelectItem>
-                <SelectItem value="team">Team</SelectItem>
-                <SelectItem value="subscription">Subscription</SelectItem>
+                <SelectItem value="All products">All products</SelectItem>
+                <SelectItem value="Technology">Technology</SelectItem>
+                <SelectItem value="Home Decor">Home Decor</SelectItem>
+                <SelectItem value="Fitness">Travel </SelectItem>
+                <SelectItem value="Fitness">Accessories</SelectItem>
+                <SelectItem value="Fitness">Equipment</SelectItem>
+                <SelectItem value="Fitness">Fashion</SelectItem>
               </SelectContent>
             </Select>
           </div>

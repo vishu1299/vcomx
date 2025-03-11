@@ -17,7 +17,7 @@ const users: User[] = [
     verified: true,
   },
   {
-    name: "Miracle Ahmad",
+    name: "Miracle ",
     followers: "12",
     image: "/src/Assets/Images/stories/pro-2.jpeg",
   },
@@ -105,7 +105,7 @@ const Stores = () => {
         <div className="mt-4 sm:mt-6 md:mt-10">
           <div className="flex justify-between items-center mb-4 mt-3">
             <h2 className="font-Oswald text-[#1F1D2B] text-xl sm:text-2xl md:text-3xl font-semibold">
-              Recommended Store
+              Recommended Stores
             </h2>
           </div>
 

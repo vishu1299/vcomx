@@ -126,7 +126,7 @@ const Search_videos = () => {
           <VideoProductItem />
 
           {/* Pagination */}
-          <div className="mt-8">
+          <div className="mt-20">
             <Pagination>
               <PaginationContent>
                 <PaginationItem>

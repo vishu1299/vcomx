@@ -4,10 +4,10 @@ import { MdOutlinePlayArrow } from "react-icons/md";
 const AboutStore = () => {
   return (
     <div className=" ">
-      <p className="font-semibold text-3xl md:text-4xl lg:text-[44px] font-Oswald text-[#121212]">
+      <p className="font-semibold text-3xl md:text-4xl lg:text-[44px] font-Oswald text-[#121212] mt-12">
         About Store
       </p>
-      <p className="text-[#88888C] font-Oswald text-base md:text-lg lg:text-[23px] font-normal mt-2">
+      <p className="text-[#88888C] font-Oswald text-base md:text-lg lg:text-[20px] font-normal mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
         Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
         mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis

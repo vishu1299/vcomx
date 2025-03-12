@@ -1,4 +1,4 @@
-// components/OrderTracking.tsx
+"use client";
 import React from "react";
 import Image from "next/image";
 import {
@@ -63,6 +63,25 @@ const OrderTracking = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-3 sm:p-4 md:p-6 font-sans">
+      {/* Track Order Header */}
+      <div className="text-center mb-6">
+        <h1 className="text-5xl font-bold text-gray-900 mb-4">Track Order</h1>
+        <p className="text-xl text-gray-600">
+          Your order number was included in your order confirmation email.
+        </p>
+      </div>
+
+      {/* Track Order Form */}
+      <div className="mt-5 flex flex-col sm:flex-row mb-10 max-w-[70%] mx-auto">
+        <input
+          type="text"
+          placeholder="Enter your order number"
+          className="flex-grow  px-4 py-3 text-lg text-gray-500 border border-gray-300 focus:outline-none"
+        />
+        <button className="bg-orange text-white font-semibold py-3 px-6 text-lg sm:px-8 uppercase tracking-wide hover:bg-[#FF6A35] transition-colors duration-200">
+          Track Order
+        </button>
+      </div>
       {/* Header Section */}
       <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm mb-6">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">

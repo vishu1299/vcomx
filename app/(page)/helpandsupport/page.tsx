@@ -114,12 +114,20 @@ const FaqItem: React.FC<FaqItemProps> = ({ item, isOpen, toggleFaq }) => (
   <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm mb-3">
     <button
       onClick={() => toggleFaq(item.id)}
-      className={`w-full flex justify-between items-center px-4 py-3 text-left text-gray-800 bg-white hover:bg-gray-50 transition-colors duration-100  ${
+      className={`w-full flex justify-between items-center px-4 py-3 text-left text-gray-800 bg-white hover:bg-gray-50 transition-colors duration-100 relative ${
         isOpen
-          ? "border-l-[40px]  border-orange"
-          : "border-l-[40px]  border-[#b7bdc4]"
+          ? "border-l-[40px] border-orange"
+          : "border-l-[40px] border-[#b7bdc4]"
       }`}
     >
+      {/* Question number - positioned in the left border */}
+      <div
+        className={`absolute left-[-20px]  transform -translate-y-1/2 text-white font-semibold ${
+          isOpen ? "top-[100%]" : "top-1/2"
+        }`}
+      >
+        {item.id}
+      </div>
       <span className="font-medium text-black text-lg">{item.question}</span>
       {isOpen ? (
         <IoIosArrowDown className="text-orange" />
@@ -129,31 +137,34 @@ const FaqItem: React.FC<FaqItemProps> = ({ item, isOpen, toggleFaq }) => (
     </button>
     {isOpen && (
       <div
-        className={`bg-white p-4 text-gray-700 transition-colors duration-100  ${
+        className={`bg-white p-4 text-gray-700 transition-colors duration-100 ${
           isOpen
-            ? "border-l-[40px]  border-orange"
-            : "border-l-[40px]  border-orange"
+            ? "border-l-[40px] border-orange"
+            : "border-l-[40px] border-orange"
         }`}
       >
+        {/* No number in the answer section */}
         {item.answer}
       </div>
     )}
   </div>
 );
 
-// Support card component
+// Support card component - fixed to ensure consistent height and alignment
 const SupportCard: React.FC<SupportCardProps> = ({
   icon,
   title,
   description,
   buttonText,
 }) => (
-  <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-    <div className="p-6 text-center">
-      <div className="text-orange mx-auto mb-3">{icon}</div>
+  <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+    <div className="p-6 text-center flex flex-col flex-grow">
+      <div className="text-orange mx-auto mb-3 h-12 flex items-center justify-center">
+        {icon}
+      </div>
       <h3 className="font-semibold text-lg mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <button className="bg-orange text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors duration-200 w-full">
+      <p className="text-gray-600 mb-4 flex-grow">{description}</p>
+      <button className="bg-orange text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors duration-200 w-full mt-auto">
         {buttonText}
       </button>
     </div>
@@ -222,25 +233,29 @@ export default function HelpCenter(): React.ReactElement {
             <SectionTitle title="Still Need Help?" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <SupportCard
-                icon={<FaPhone className="text-3xl inline-block" />}
+                icon={<FaPhone className="text-3xl" />}
                 title="Call Us"
                 description="24x7 support available"
                 buttonText="CALL NOW"
               />
               <SupportCard
-                icon={<FaEnvelope className="text-3xl inline-block" />}
+                icon={<FaEnvelope className="text-3xl" />}
                 title="Email Support"
                 description="Get a response within 24 hours"
                 buttonText="SEND EMAIL"
               />
-              <Link href="/cartsupport">
-                <SupportCard
-                  icon={<AiFillWechat className="text-5xl inline-block" />}
-                  title="Live Chat"
-                  description="Chat with our support team"
-                  buttonText="START CHAT"
-                />
-              </Link>
+              <div className="h-full">
+                {" "}
+                {/* Wrapper to maintain consistent height */}
+                <Link href="/cartsupport" className="h-full block">
+                  <SupportCard
+                    icon={<AiFillWechat className="text-3xl" />}
+                    title="Live Chat"
+                    description="Chat with our support team"
+                    buttonText="START CHAT"
+                  />
+                </Link>
+              </div>
             </div>
           </section>
 
@@ -249,13 +264,13 @@ export default function HelpCenter(): React.ReactElement {
             <SectionTitle title="Seller Support" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <SupportCard
-                icon={<FaUser className="text-3xl inline-block" />}
+                icon={<FaUser className="text-3xl" />}
                 title="New Seller Guide"
                 description="Everything you need to know about selling on our platform"
                 buttonText="START SELLING"
               />
               <SupportCard
-                icon={<FaCog className="text-3xl inline-block" />}
+                icon={<FaCog className="text-3xl" />}
                 title="Seller Login"
                 description="Access your seller account and manage your business"
                 buttonText="SELLER LOGIN"

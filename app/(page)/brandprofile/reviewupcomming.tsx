@@ -106,7 +106,7 @@ const ReviewUpcomming: React.FC = () => {
             <div className="flex items-start gap-4">
               <div className="flex flex-col items-center">
                 <img
-                  src={"https://via.placeholder.com/40"}
+                  src={"/src/Assets/Images/brandprofile/store.png"}
                   alt={review.name}
                   className="w-10 h-10 rounded-full"
                 />

@@ -5,6 +5,16 @@ import { DualRangeSlider } from "@/components/ui/dualRangeSliderProps";
 import VideoProductItem from "./video_products";
 import BrandFilter from "./brandfilter";
 import Highlight from "./highlight";
+import Image from "next/image";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+  PaginationEllipsis,
+} from "@/components/ui/pagination";
 
 const categories = [
   "Promotions",
@@ -24,9 +34,23 @@ const categories = [
 
 const Search_videos = () => {
   const [values, setValues] = useState([18, 100]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 3; // This should be dynamically calculated based on your actual data
+
+  // Handle page changes
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to top or to products section when changing pages
+    const productsSection = document.getElementById("products-section");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  };
 
   return (
-    <div className="container mx-auto  py-6">
+    <div className="container mx-auto py-6">
       <div className="flex flex-col md:flex-row justify-between items-center mb-6">
         <p className="font-semibold text-2xl md:text-4xl text-gray-900">
           Products
@@ -51,7 +75,7 @@ const Search_videos = () => {
                     >
                       <label
                         htmlFor={`category-${index}`}
-                        className=" text-[#1C1F23] text-[14px] font-normal  font-Oswald"
+                        className="text-[#1C1F23] text-[14px] font-normal font-Oswald"
                       >
                         {category}
                       </label>
@@ -62,7 +86,7 @@ const Search_videos = () => {
             </div>
           </div>
 
-          <div className=" mt-[40px]">
+          <div className="mt-[40px]">
             <Highlight />
           </div>
 
@@ -85,13 +109,103 @@ const Search_videos = () => {
               </p>
             </div>
           </div>
-          <div className=" mt-[40px]">
+          <div className="mt-[40px]">
             <BrandFilter />
+          </div>
+          <div className="mt-[20px]">
+            <Image
+              src="/src/Assets/Images/ads.png"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
           </div>
         </div>
 
-        <div className="w-full">
+        <div id="products-section" className="w-full">
           <VideoProductItem />
+
+          {/* Pagination */}
+          <div className="mt-8">
+            <Pagination>
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (currentPage > 1) handlePageChange(currentPage - 1);
+                    }}
+                    className={
+                      currentPage === 1 ? "pointer-events-none opacity-50" : ""
+                    }
+                  />
+                </PaginationItem>
+
+                {Array.from({ length: totalPages }).map((_, index) => {
+                  const pageNumber = index + 1;
+
+                  // Display logic for pagination items
+                  if (
+                    pageNumber === 1 ||
+                    pageNumber === totalPages ||
+                    (pageNumber >= currentPage - 1 &&
+                      pageNumber <= currentPage + 1)
+                  ) {
+                    return (
+                      <PaginationItem key={index}>
+                        <PaginationLink
+                          href="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handlePageChange(pageNumber);
+                          }}
+                          isActive={currentPage === pageNumber}
+                          className={
+                            currentPage === pageNumber
+                              ? "bg-[#FF6F3C] text-white hover:bg-[#e5633c]"
+                              : ""
+                          }
+                        >
+                          {pageNumber}
+                        </PaginationLink>
+                      </PaginationItem>
+                    );
+                  }
+
+                  // Show ellipsis if needed
+                  if (
+                    (pageNumber === currentPage - 2 && pageNumber > 1) ||
+                    (pageNumber === currentPage + 2 && pageNumber < totalPages)
+                  ) {
+                    return (
+                      <PaginationItem key={index}>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    );
+                  }
+
+                  return null;
+                })}
+
+                <PaginationItem>
+                  <PaginationNext
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (currentPage < totalPages)
+                        handlePageChange(currentPage + 1);
+                    }}
+                    className={
+                      currentPage === totalPages
+                        ? "pointer-events-none opacity-50"
+                        : ""
+                    }
+                  />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
+          </div>
         </div>
       </div>
     </div>

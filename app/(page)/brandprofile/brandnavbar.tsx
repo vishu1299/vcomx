@@ -1,5 +1,3 @@
-
-
 "use client";
 import React, { useState } from "react";
 import BrandProductDetails from "./brandProductDetails";
@@ -12,7 +10,7 @@ const BrandNavbar = () => {
   return (
     <div className="border-t-2 border-[#E7E7E7] mt-6">
       <div className="w-full mt-4">
-        <div className="flex lg:gap-2 gap-3 justify-between w-full lg:max-w-[500px] flex-wrap">
+        <div className="flex lg:gap-2 gap-3 justify-between w-full lg:max-w-[400px] flex-wrap">
           {["Product", "About", "Reviews", "Upcoming"].map((tab, index) => (
             <div className="text-[#88888C] text-[18px] font-Oswald" key={index}>
               <p
@@ -29,11 +27,10 @@ const BrandNavbar = () => {
           ))}
         </div>
         <div className="mt-4">
-          {activeTab === "Product" && <BrandProductDetails/>}
-          {activeTab === "About"  &&  <AboutStore/>}
-          {activeTab === "Upcoming" && <Upcomming/>}
-          {activeTab==="Reviews" && <ReviewUpcomming/>}
-        
+          {activeTab === "Product" && <BrandProductDetails />}
+          {activeTab === "About" && <AboutStore />}
+          {activeTab === "Upcoming" && <Upcomming />}
+          {activeTab === "Reviews" && <ReviewUpcomming />}
         </div>
       </div>
     </div>
@@ -41,5 +38,3 @@ const BrandNavbar = () => {
 };
 
 export default BrandNavbar;
-
-

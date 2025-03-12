@@ -134,7 +134,7 @@ const UpcommingDetails = () => {
         <p className="font-Oswald font-semibold text-[#121212] text-3xl md:text-4xl lg:text-[44px]">
           About This Stream
         </p>
-        <p className="font-Oswald text-[#88888C] text-base md:text-lg lg:text-[23px] font-normal mt-2">
+        <p className="font-Oswald text-[#88888C] text-base md:text-lg lg:text-[20px] font-normal mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
           mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
           mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis

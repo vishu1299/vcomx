@@ -244,7 +244,9 @@ const Headermenu = () => {
           <Link href="/signIn">
             <div className="flex flex-col items-center justify-center p-1">
               <LogIn className="text-xl sm:text-2xl" />
-              <span className="text-[10px] hidden sm:block">Sign In</span>
+              <span className="text-[14px] font-medium hidden sm:block">
+                Sign In
+              </span>
             </div>
           </Link>
 
@@ -252,14 +254,18 @@ const Headermenu = () => {
           <Link href="/user-account">
             <div className="flex flex-col items-center justify-center p-1">
               <GoPerson className="text-xl sm:text-2xl" />
-              <span className="text-[10px] hidden sm:block">Account</span>
+              <span className="text-[14px] font-medium hidden sm:block">
+                Account
+              </span>
             </div>
           </Link>
 
           {/* Wishlist */}
           <div className="flex flex-col items-center justify-center p-1">
             <FaRegHeart className="text-xl sm:text-2xl" />
-            <span className="text-[10px] hidden sm:block">Wishlist</span>
+            <span className="text-[14px] font-medium hidden sm:block">
+              Wishlist
+            </span>
           </div>
 
           {/* Cart */}
@@ -274,7 +280,9 @@ const Headermenu = () => {
                 2
               </span>
             </div>
-            <span className="text-[10px] hidden sm:block">Cart</span>
+            <span className="text-[14px] font-medium hidden sm:block">
+              Cart
+            </span>
 
             {/* Cart Dropdown */}
             {cartOpen && (

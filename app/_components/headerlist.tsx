@@ -190,7 +190,7 @@ const Headerlist = () => {
               </p>
             </Link>
             <p className="flex text-white justify-center items-center gap-[12px]">
-              <span>Hotline:</span> +01 1234 8888
+              <span>Hotline:</span> +1 (208) 703-6484
             </p>
           </div>
         </div>
@@ -206,7 +206,7 @@ const Headerlist = () => {
             </p>
           </Link>
           <p className="flex text-[#fff] justify-center items-center gap-[12px]">
-            <span>Hotline: </span> +01 1234 8888
+            <span>Hotline: </span> +1 (208) 703-6484
           </p>
         </div>
 

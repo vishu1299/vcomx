@@ -48,23 +48,17 @@ const Headerlist = () => {
   const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [screenSize, setScreenSize] = useState({
-    isMobile: false,
-    isTablet: false,
-  });
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Check screen size with more detailed breakpoints
+  // Check screen size
   useEffect(() => {
-    const checkScreenSize = () => {
-      setScreenSize({
-        isMobile: window.innerWidth < 640, // sm breakpoint
-        isTablet: window.innerWidth >= 640 && window.innerWidth < 1024, // md to lg breakpoint
-      });
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
     };
 
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   // Handle click outside to close menus
@@ -73,9 +67,8 @@ const Headerlist = () => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setSitemenu(false);
       }
-
       if (
-        !(screenSize.isMobile || screenSize.isTablet) &&
+        !isMobile &&
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
       ) {
@@ -87,102 +80,57 @@ const Headerlist = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [screenSize]);
-
-  // Close dropdown when clicking outside on mobile/tablet
-  useEffect(() => {
-    if (dropdown && (screenSize.isMobile || screenSize.isTablet)) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [dropdown, screenSize]);
+  }, [isMobile]);
 
   const toggleMenu = () => {
     setSitemenu(!sitemenu);
   };
 
-  const toggleDropdown = () => {
-    setDropdown(!dropdown);
-    setActiveSubmenu(null);
-  };
-
-  const handleSubcategoryClick = (index: number) => {
-    if (screenSize.isMobile || screenSize.isTablet) {
-      setActiveSubmenu(activeSubmenu === index ? null : index);
-    }
-  };
-
   return (
-    <div className="w-full h-auto lg:h-[70px] sm:h-[60px]  flex flex-wrap relative bg-[#142535] shadow-md">
-      {/* Category Dropdown Button */}
+    <div className="w-full lg:h-[70px] h-[50px] flex lg:gap-[70px] relative bg-[#142535]">
+      {/* Category Dropdown Button - Keeping original desktop behavior */}
       <div
         ref={dropdownRef}
-        className="bg-[#FF6F3C] h-full sm:w-[220px] w-[60%] flex justify-center items-center p-2 sm:p-[10px] relative cursor-pointer"
-        onMouseEnter={() =>
-          !(screenSize.isMobile || screenSize.isTablet) && setDropdown(true)
-        }
-        onMouseLeave={() =>
-          !(screenSize.isMobile || screenSize.isTablet) && setDropdown(false)
-        }
-        onClick={toggleDropdown}
+        className="bg-[#FF6F3C] h-full lg:w-[266px] w-[60%] flex justify-center items-center p-[10px] relative"
+        onMouseEnter={() => !isMobile && setDropdown(true)}
+        onMouseLeave={() => !isMobile && setDropdown(false)}
+        onClick={() => isMobile && setDropdown(!dropdown)}
       >
-        <p className="text-white text-sm sm:text-base lg:text-[16px] flex justify-between items-center w-full uppercase font-medium truncate">
-          Browse Categories
-          <FaChevronDown
-            className={`ml-2 transition-transform duration-300 ${
-              dropdown ? "rotate-180" : ""
-            }`}
-          />
+        <p className="text-white lg:text-[16px] md:text-[12px] flex justify-between items-center w-full uppercase cursor-pointer">
+          Browse Categories <FaChevronDown />
         </p>
 
         {dropdown && (
-          <div className="absolute w-full sm:w-[250px] top-full left-0 bg-white shadow-lg z-50 max-h-[70vh] overflow-y-auto">
+          <div className="absolute w-[250px] top-[50px] left-0 bg-white shadow-md z-50">
             {browsecategory.map((item, index) => (
               <div
                 key={item.id}
                 className="border-b hover:bg-gray-100 relative"
-                onMouseEnter={() =>
-                  !(screenSize.isMobile || screenSize.isTablet) &&
-                  setActiveSubmenu(index)
-                }
-                onMouseLeave={() =>
-                  !(screenSize.isMobile || screenSize.isTablet) &&
-                  setActiveSubmenu(null)
-                }
+                onMouseEnter={() => !isMobile && setActiveSubmenu(index)}
+                onMouseLeave={() => !isMobile && setActiveSubmenu(null)}
                 onClick={(e) => {
-                  e.stopPropagation();
-                  handleSubcategoryClick(index);
+                  if (isMobile) {
+                    e.stopPropagation();
+                    setActiveSubmenu(activeSubmenu === index ? null : index);
+                  }
                 }}
               >
                 <div className="p-3 flex justify-between items-center cursor-pointer">
-                  <span className="truncate pr-2">{item.item}</span>
-                  <FaChevronRight
-                    className={`transition-transform duration-300 ${
-                      activeSubmenu === index &&
-                      (screenSize.isMobile || screenSize.isTablet)
-                        ? "rotate-90"
-                        : ""
-                    }`}
-                  />
+                  {item.item} <FaChevronRight />
                 </div>
 
                 {activeSubmenu === index && item.subcategories && (
                   <div
                     className={
-                      screenSize.isMobile || screenSize.isTablet
-                        ? "w-full bg-gray-50 py-2 px-4 border-t border-gray-200"
+                      isMobile
+                        ? "w-full bg-gray-50 p-3"
                         : "absolute left-full top-0 bg-white shadow-md w-[200px] p-3 z-50"
                     }
                   >
                     {item.subcategories.map((sub, idx) => (
                       <p
                         key={idx}
-                        className="py-2 px-1 hover:bg-gray-200 cursor-pointer border-b border-gray-100 last:border-b-0"
+                        className="p-1 hover:bg-gray-200 cursor-pointer"
                       >
                         {sub}
                       </p>
@@ -195,93 +143,78 @@ const Headerlist = () => {
         )}
       </div>
 
-      <div className="flex justify-between items-center h-full lg:flex-row flex-col w-[40%] sm:w-auto lg:w-full lg:flex-1 relative">
+      <div className="flex lg:justify-between justify-center items-center lg:w-full w-[40%] lg:flex-row flex-col relative">
         {/* Mobile Close Button */}
         {sitemenu && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          <span
             onClick={() => setSitemenu(false)}
+            className="z-[99] absolute left-[-38px] bg-[#142535] text-white p-[4px] rounded-[3px] lg:hidden"
           >
-            <div
-              className="absolute right-4 top-4 bg-[#142535] text-white p-2 rounded-full lg:hidden"
-              onClick={(e) => {
-                e.stopPropagation();
-                setSitemenu(false);
-              }}
-            >
-              <RxCross1 size={20} />
-            </div>
-          </div>
+            <RxCross1 />
+          </span>
         )}
 
         {/* Navigation Menu */}
         <div
           ref={menuRef}
-          className={`flex items-center gap-4 lg:gap-[30px] flex-col lg:flex-row bg-[#142535] w-full py-6 lg:py-0
-            ${
-              sitemenu
-                ? "fixed top-0 right-0 bottom-0 z-50 w-[280px] h-full overflow-y-auto shadow-xl"
-                : "hidden lg:flex"
-            }`}
+          className={`flex items-center gap-[30px] lg:flex-row flex-col bg-[#142535] lg:bg-[unset] w-full lg:w-[unset] py-[15px] lg:[position:unset] absolute top-0 
+            ${sitemenu ? "block" : "hidden"} lg:flex right-0 z-40`}
         >
-          <ul className="flex lg:gap-[30px] gap-4 lg:flex-row flex-col w-full lg:w-auto px-6 lg:px-0">
-            <li className="text-[#fff] text-sm sm:text-base uppercase hover:text-[#FF6F3C] transition-colors py-2 lg:py-0 border-b lg:border-0 border-gray-700">
+          <ul className="flex lg:gap-[30px] gap-[10px] lg:flex-row flex-col">
+            <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
               <Link href="/">HomePage</Link>
             </li>
-            <li className="text-[#fff] text-sm sm:text-base uppercase hover:text-[#FF6F3C] transition-colors py-2 lg:py-0 border-b lg:border-0 border-gray-700">
+            <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
               <Link href="#">Discover</Link>
             </li>
-            <li className="text-[#fff] text-sm sm:text-base uppercase hover:text-[#FF6F3C] transition-colors py-2 lg:py-0 border-b lg:border-0 border-gray-700">
+            <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
               <Link href="/reels">Videos</Link>
             </li>
-            <li className="text-[#fff] text-sm sm:text-base uppercase hover:text-[#FF6F3C] transition-colors py-2 lg:py-0 border-b lg:border-0 border-gray-700">
+            <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
               <Link href="#">Contact Us</Link>
             </li>
           </ul>
 
-          <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors w-[80%] lg:w-auto mx-4 lg:mx-0 mt-4 lg:mt-0">
-            <Link
-              href="#"
-              className="text-[#fff] text-sm sm:text-base uppercase px-4 py-2 w-full text-center"
-            >
+          <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors">
+            <Link href="#" className="text-[#fff] uppercase p-[10px] py-[10px]">
               Start Selling
             </Link>
           </div>
 
           {/* Mobile Contact Info */}
-          <div className="flex flex-col gap-4 lg:hidden w-full items-center mt-6 px-4 border-t border-gray-700 pt-6">
-            <Link href="/trackorder" className="w-full">
-              <p className="flex text-white justify-start items-center gap-3 py-2">
+
+          <div className="flex flex-col gap-[10px] lg:hidden w-full items-center mt-4">
+            <Link href="/trackorder">
+              <p className="flex text-white justify-center items-center gap-[12px]">
                 <FaTruckFast className="text-xl" /> Track Your Order
               </p>
             </Link>
-            <p className="flex text-white justify-start items-center gap-3 py-2 w-full">
+            <p className="flex text-white justify-center items-center gap-[12px]">
               <span>Hotline:</span> +01 1234 8888
             </p>
           </div>
         </div>
 
         {/* Desktop Contact Info */}
-        <div className="hidden lg:flex gap-6 items-center justify-end flex-1 pr-6">
+        <div className="lg:flex gap-[30px] items-center justify-center hidden">
           <Link href="/trackorder">
-            <p className="flex text-[#fff] justify-center items-center gap-3 cursor-pointer hover:text-[#FF6F3C] transition-colors whitespace-nowrap">
-              <FaTruckFast className="text-xl" /> Track Your Order
+            <p className="flex text-[#fff] justify-center items-center gap-[12px] cursor-pointer hover:text-[#FF6F3C] transition-colors">
+              <span>
+                <FaTruckFast className="text-2xl" />
+              </span>{" "}
+              Track Your Order
             </p>
           </Link>
-          <p className="flex text-[#fff] justify-center items-center gap-2 whitespace-nowrap">
-            <span>Hotline:</span> +01 1234 8888
+          <p className="flex text-[#fff] justify-center items-center gap-[12px]">
+            <span>Hotline: </span> +01 1234 8888
           </p>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden flex justify-end items-center h-full pr-4 absolute -right-5 top-5">
-          <button
-            className="p-2 text-white focus:outline-none"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            <CiMenuFries className="text-2xl" />
-          </button>
+        <div className="lg:hidden flex justify-end items-end w-full">
+          <span className="pr-[10px]" onClick={toggleMenu}>
+            <CiMenuFries className="text-[#fff] text-xl" />
+          </span>
         </div>
       </div>
     </div>

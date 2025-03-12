@@ -64,7 +64,7 @@ const recentlyPosted = [
 
 const PostStores = () => {
   return (
-    <div className="px-4 md:px-8 xl:px-16">
+    <div className="  ">
       <div className="xl:mb-44 ">
         <p className="py-2 md:py-4 font-semibold text-[#121212] font-Oswald text-3xl md:text-4xl">
           Today

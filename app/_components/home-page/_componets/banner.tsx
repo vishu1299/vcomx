@@ -60,7 +60,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-full mx-auto">
+    <div className="w-full   max-w-full mx-auto">
       <div className=" md:block hidden">
         <Carousel
           opts={{ loop: true, align: "start" }}

@@ -206,7 +206,7 @@ export default function HelpCenter(): React.ReactElement {
           <h2 className="text-xl font-bold mb-4">Help Topics</h2>
           <ul className="space-y-1">
             {helpTopics.map((topic, index) => (
-              <HelpTopicItem key={index} topic={topic} />
+              <HelpTopicItem  key={index} topic={topic} />
             ))}
           </ul>
         </div>

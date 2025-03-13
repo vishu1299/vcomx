@@ -21,14 +21,14 @@ const Header = () => {
                 <span>
                   <FaEnvelope />
                 </span>{" "}
-                hi.avitex@gmail.com
+                info@xcrino.com
               </p>
               <p className="flex justify-start items-center gap-[10px] font-Oswald text-white text-sm md:text-base">
                 {" "}
                 <span>
                   <SlLocationPin />
                 </span>{" "}
-                4140 Parker Rd. Allentown, NY
+                E 516 Goma Plaza sector 7 Dwarka, New Delhi
               </p>
             </div>
 

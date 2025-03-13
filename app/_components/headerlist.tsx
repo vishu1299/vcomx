@@ -165,13 +165,13 @@ const Headerlist = () => {
               <Link href="/">HomePage</Link>
             </li>
             <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
-              <Link href="#">Discover</Link>
+              <Link href="/discover">Discover</Link>
             </li>
             <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
               <Link href="/reels">Videos</Link>
             </li>
             <li className="text-[#fff] uppercase hover:text-[#FF6F3C] transition-colors">
-              <Link href="#">Contact Us</Link>
+              <Link href="/helpandsupport">Contact Us</Link>
             </li>
           </ul>
 

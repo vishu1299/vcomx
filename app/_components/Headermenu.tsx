@@ -185,9 +185,9 @@ const Headermenu = () => {
           <Image
             src="/src/Assets/Images/Logo.png"
             alt="Logo"
-            width={190}
-            height={42}
-            className="w-32 sm:w-40 md:w-48 lg:w-56"
+            width={100}
+            height={60}
+            className="w-24 sm:w-36 md:w-40 lg:w-40"
           />
         </div>
 
@@ -261,17 +261,19 @@ const Headermenu = () => {
           </Link>
 
           {/* Wishlist */}
-          <div className="flex flex-col items-center justify-center p-1">
-            <FaRegHeart className="text-xl sm:text-2xl" />
-            <span className="text-[14px] font-medium hidden sm:block">
-              Wishlist
-            </span>
-          </div>
+          <Link href="/wishlist">
+            <div className="flex flex-col items-center justify-center p-1">
+              <FaRegHeart className="text-xl sm:text-2xl" />
+              <span className="text-[14px] font-medium hidden sm:block">
+                Wishlist
+              </span>
+            </div>
+          </Link>
 
           {/* Cart */}
           <div
             ref={cartRef}
-            className="relative flex flex-col items-center justify-center p-1"
+            className="relative flex flex-col items-center justify-center p-1 cursor-pointer"
             onClick={() => setCartOpen(!cartOpen)}
           >
             <div className="relative">

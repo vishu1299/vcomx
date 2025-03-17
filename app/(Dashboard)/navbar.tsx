@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="flex items-center justify-between p-4 bg-white shadow-sm">
       <div className="flex items-center space-x-2">
         <SidebarTrigger className=" text-gray-900" />
-        <span className="text-lg font-medium text-gray-900">Dashboard</span>
+        <span className="text-lg font-medium text-gray-900">Dashboard </span>
       </div>
 
       {/* Center: Search Bar */}

@@ -13,7 +13,7 @@ export default {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			orange: '#FF6F3C',
-        Bggray : '#F8F8F8',
+  			Bggray: '#F8F8F8',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -51,6 +51,16 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
   		fontFamily: {
@@ -58,10 +68,10 @@ export default {
   				'Oswald',
   				'serif'
   			],
-			  poppins: [
-				'Poppins',
-				'serif'
-			]
+  			poppins: [
+  				'Poppins',
+  				'serif'
+  			]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

@@ -176,7 +176,10 @@ const Headerlist = () => {
           </ul>
 
           <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors">
-            <Link href="#" className="text-[#fff] uppercase p-[10px] py-[10px]">
+            <Link
+              href="/dashboard"
+              className="text-[#fff] uppercase p-[10px] py-[10px]"
+            >
               Start Selling
             </Link>
           </div>

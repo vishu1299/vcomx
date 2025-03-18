@@ -20,7 +20,7 @@ export default function ReturnPolicyPage() {
     <div className="container mx-auto ">
       {/* Return Process */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">Return Process</h2>
+        <h2 className="text-2xl font-bold mb-6">Return Process </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {/* Step 1 */}
           <Card className="border border-gray-200">

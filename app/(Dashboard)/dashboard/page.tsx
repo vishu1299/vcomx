@@ -333,7 +333,7 @@ const EcommerceDashboard = () => {
                         ? "bg-teal-100"
                         : item.icon === "clock"
                         ? "bg-red-100"
-                        : item.icon === "package"
+                        : item.icon === "package"  
                         ? "bg-green-100"
                         : "bg-blue-100"
                     }`}

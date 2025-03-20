@@ -89,7 +89,7 @@ export default function AppSidebar() {
                 <SidebarMenuButton asChild>
                   <div
                     onClick={() => setLink("setting")}
-                    className="flex gap-3 p-2 cursor-pointer hover:bg-gray-100"
+                    className="flex gap-3 p-2 cursor-pointer hover:bg-gray-100 "
                   >
                     <Settings />
                     <h1>Setting</h1>

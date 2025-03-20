@@ -6,7 +6,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 export default function Navbar() {
   return (
     <div className="w-full flex justify-end items-end">
-      <nav className="flex w-[83%] items-center justify-between p-4 bg-white shadow-sm">
+      <nav className="flex w-[83%] items-center justify-between p-4 bg-white shadow-sm ">
         <div className="flex items-center space-x-2">
           <SidebarTrigger className=" text-gray-900" />
           <span className="text-lg font-medium text-gray-900">Dashboard </span>

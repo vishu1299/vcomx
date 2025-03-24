@@ -8,9 +8,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
+// import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon, ChevronRight, Star, MoreHorizontal } from "lucide-react";
-import { format } from "date-fns";
+// import { format } from "date-fns";
 
 interface Review {
   id: string;
@@ -28,13 +28,13 @@ interface Review {
 }
 
 const CampaignReviewList: React.FC = () => {
-  const [date, setDate] = React.useState<{
-    from?: Date;
-    to?: Date;
-  }>({
-    from: new Date(2028, 4, 1),
-    to: new Date(2028, 7, 25),
-  });
+  // const [date, setDate] = React.useState<{
+  //   from?: Date;
+  //   to?: Date;
+  // }>({
+  //   from: new Date(2028, 4, 1),
+  //   to: new Date(2028, 7, 25),
+  // });
 
   const reviews: Review[] = [
     {
@@ -82,17 +82,17 @@ const CampaignReviewList: React.FC = () => {
             >
               <CalendarIcon className="h-4 w-4 text-gray-500" />
               <span className="text-sm font-normal">
-                {date.from && date.to
+                {/* {date.from && date.to
                   ? `${format(date.from, "MMM d, yyyy")} - ${format(
                       date.to,
                       "MMM d, yyyy"
                     )}`
-                  : "Select Date Range"}
+                  : "Select Date Range"} */}
               </span>
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0" align="start">
-            <Calendar
+            {/* <Calendar
               mode="range"
               defaultMonth={date.from || new Date()}
               selected={date as { from: Date; to: Date }} // Ensure type matches DateRange
@@ -104,7 +104,7 @@ const CampaignReviewList: React.FC = () => {
                 }
               }}
               numberOfMonths={2}
-            />
+            /> */}
           </PopoverContent>
         </Popover>
 

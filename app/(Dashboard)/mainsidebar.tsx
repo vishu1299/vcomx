@@ -28,7 +28,7 @@ import Link from "next/link";
 // Menu items.
 const items = [
   { title: "Dashboard", url: "/dashboard", icon: FaTachometerAlt },
-  { title: "Schedule", url: "#", icon: FaCalendarAlt },
+  { title: "Schedule", url: "/schedule", icon: FaCalendarAlt },
   { title: "Products", url: "/my_inventory", icon: FaBox },
   { title: "Orders", url: "/my_order", icon: FaShoppingCart },
   { title: "Invoices", url: "/invoice", icon: FaFileInvoice },

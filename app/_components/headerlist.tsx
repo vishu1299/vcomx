@@ -175,15 +175,6 @@ const Headerlist = () => {
             </li>
           </ul>
 
-          <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors">
-            <Link
-              href="/dashboard"
-              className="text-[#fff] uppercase p-[10px] py-[10px]"
-            >
-              Start Selling
-            </Link>
-          </div>
-
           {/* Mobile Contact Info */}
 
           <div className="flex flex-col gap-[10px] lg:hidden w-full items-center mt-4">
@@ -192,9 +183,9 @@ const Headerlist = () => {
                 <FaTruckFast className="text-xl" /> Track Your Order
               </p>
             </Link>
-            <p className="flex text-white justify-center items-center gap-[12px]">
+            {/* <p className="flex text-white justify-center items-center gap-[12px]">
               <span>Hotline:</span> +1 (208) 703-6484
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -208,9 +199,17 @@ const Headerlist = () => {
               Track Your Order
             </p>
           </Link>
-          <p className="flex text-[#fff] justify-center items-center gap-[12px]">
+          <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors">
+            <Link
+              href="/dashboard"
+              className="text-[#fff] uppercase p-[10px] py-[10px]"
+            >
+              Start Selling
+            </Link>
+          </div>
+          {/* <p className="flex text-[#fff] justify-center items-center gap-[12px]">
             <span>Hotline: </span> +1 (208) 703-6484
-          </p>
+          </p> */}
         </div>
 
         {/* Mobile Menu Button */}

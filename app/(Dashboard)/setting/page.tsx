@@ -34,7 +34,7 @@ import {
 } from "lucide-react";
 import Helpcenter from "./helpcenter";
 import NotificationSettings from "./notification";
-import CampaignReviewList from "./manageReviews";
+// import CampaignReviewList from "./manageReviews";
 import StreamConfigurationSettings from "./livestream";
 
 // Profile form schema
@@ -606,7 +606,7 @@ export default function SettingsPage() {
           {/* Display placeholder content for other sections */}
           {activeSection === "Help Centre" && <Helpcenter />}
           {activeSection === "Notifications" && <NotificationSettings />}
-          {activeSection === "Manage Reviews" && <CampaignReviewList />}
+          {/* {activeSection === "Manage Reviews" && <CampaignReviewList />} */}
           {activeSection === "Live Setting" && <StreamConfigurationSettings />}
         </div>
       </div>

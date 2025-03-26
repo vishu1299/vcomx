@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import Footer from "../_components/footer";
 import Header from "../_components/header";
 
-
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -26,16 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
-    
-       <div className=" ">
-   
-   <Header />
-    
-    {children}
-     <Footer/>
+    <div className=" ">
+      <Header />
 
-       </div>
-    
+      {children}
+      <Footer />
+    </div>
   );
 }

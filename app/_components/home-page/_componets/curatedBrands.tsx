@@ -122,7 +122,7 @@ const CuratedBrands: React.FC = () => {
       <div className="bg-[#FCEEE7] w-full">
         <div className="flex items-center mt-15 w-full max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-[#121212] px-4 py-3">
-            Curated Brands
+            Emerging Brands
           </h2>
           <div className="flex-1 border-t border-gray-400 text-[#D6D6D6] ml-4"></div>
 

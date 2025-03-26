@@ -2,6 +2,7 @@
 
 import { Search } from "lucide-react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -24,14 +25,16 @@ export default function Navbar() {
           </div>
 
           {/* Right: User Profile */}
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-full bg-gray-200"></div>
-            <div className="flex flex-col">
-              <span className="text-gray-900 font-medium ">
-                Sabrine Josephine
-              </span>
-              <span className="text-gray-500 text-sm">sabrine@pay.com</span>
-            </div>
+          <div className="">
+            <Link href="/profile" className="flex items-center space-x-3">
+              <div className="w-8 h-8 rounded-full bg-gray-200"></div>
+              <div className="flex flex-col">
+                <span className="text-gray-900 font-medium ">
+                  Sabrine Josephine
+                </span>
+                <span className="text-gray-500 text-sm">sabrine@pay.com</span>
+              </div>
+            </Link>
           </div>
         </div>
       </nav>

@@ -19,6 +19,7 @@ import {
   SlidersHorizontal,
   Plus,
 } from "lucide-react";
+import Link from "next/link";
 
 interface Post {
   id: number;
@@ -138,9 +139,11 @@ const PostManagementTable: React.FC = () => {
           <Button variant="outline" className="flex items-center">
             <SlidersHorizontal className="mr-1 h-4 w-4" /> Filters
           </Button>
-          <Button className="bg-orange hover:bg-orange text-white flex items-center">
-            <Plus className="mr-1 h-4 w-4" /> Add Post
-          </Button>
+          <Link href="/create_post">
+            <Button className="bg-orange hover:bg-orange text-white flex items-center">
+              <Plus className="mr-1 h-4 w-4" /> Add Post
+            </Button>
+          </Link>
         </div>
       </div>
 

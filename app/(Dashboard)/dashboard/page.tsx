@@ -18,6 +18,7 @@ import {
   Mic,
 } from "lucide-react";
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from "recharts";
+import Link from "next/link";
 
 const salesData = [
   { name: "Jan 2021", new: 20000, overdue: 30000 },
@@ -209,9 +210,11 @@ const EcommerceDashboard = () => {
             </p>
           </div>
           <div className="flex gap-2">
-            <Button className="bg-red-500 hover:bg-red-600 text-white flex items-center gap-2">
-              <Mic className="h-4 w-4" /> Go Live
-            </Button>
+            <Link href="/go_live">
+              <Button className="bg-red-500 hover:bg-red-600 text-white flex items-center gap-2">
+                <Mic className="h-4 w-4" /> Go Live
+              </Button>
+            </Link>
             <Button variant="outline" className="flex items-center gap-2">
               <CalendarIcon className="h-4 w-4" /> Schedule
             </Button>
@@ -225,10 +228,12 @@ const EcommerceDashboard = () => {
               <div className="flex justify-between items-start">
                 <div>
                   <p className="text-base font-medium mb-1">Todays Sales</p>
-                  <h2 className="text-3xl font-bold mb-0">$25k</h2>
-                  <p className="text-xs text-green-500 font-semibold mt-1">
-                    +$8,700
-                  </p>
+                  <div className="flex gap-3">
+                    <h2 className="text-3xl font-bold mb-0">$25k</h2>
+                    <p className="text-xs text-green-500 bg-green-100 my-auto rounded-3xl p-2 font-semibold mt-1">
+                      +$8,700
+                    </p>
+                  </div>
                   <p className="text-xs text-gray-500">Since last week</p>
                 </div>
                 <div className="bg-blue-100 p-2 rounded-lg">
@@ -250,10 +255,12 @@ const EcommerceDashboard = () => {
               <div className="flex justify-between items-start">
                 <div>
                   <p className="text-base font-medium mb-1">Orders Completed</p>
-                  <h2 className="text-3xl font-bold mb-0">410</h2>
-                  <p className="text-xs text-green-500 font-semibold mt-1">
-                    +212
-                  </p>
+                  <div className="flex gap-3">
+                    <h2 className="text-3xl font-bold mb-0">$2500</h2>
+                    <p className="text-xs text-green-500 bg-green-100 my-auto rounded-3xl p-2 font-semibold mt-1">
+                      +$800
+                    </p>
+                  </div>
                   <p className="text-xs text-gray-500">Since last week</p>
                 </div>
                 <div className="bg-green-100 p-2 rounded-lg">
@@ -268,10 +275,12 @@ const EcommerceDashboard = () => {
               <div className="flex justify-between items-start">
                 <div>
                   <p className="text-base font-medium mb-1">New Orders</p>
-                  <h2 className="text-3xl font-bold mb-0">$135k</h2>
-                  <p className="text-xs text-green-500 font-semibold mt-1">
-                    +$2700
-                  </p>
+                  <div className="flex gap-3">
+                    <h2 className="text-3xl font-bold mb-0">$30k</h2>
+                    <p className="text-xs text-green-500 bg-green-100 my-auto rounded-3xl p-2 font-semibold mt-1">
+                      +$7000
+                    </p>
+                  </div>
                   <p className="text-xs text-gray-500">Since last week</p>
                 </div>
                 <div className="bg-orange-100 p-2 rounded-lg">
@@ -296,10 +305,12 @@ const EcommerceDashboard = () => {
               <div className="flex justify-between items-start">
                 <div>
                   <p className="text-base font-medium mb-1">Total Products</p>
-                  <h2 className="text-3xl font-bold mb-0">$300</h2>
-                  <p className="text-xs text-red-500 font-semibold mt-1">
-                    -$120
-                  </p>
+                  <div className="flex gap-3">
+                    <h2 className="text-3xl font-bold mb-0">$300k</h2>
+                    <p className="text-xs text-red-500 bg-red-100 my-auto rounded-3xl p-2 font-semibold mt-1">
+                      -$70
+                    </p>
+                  </div>
                   <p className="text-xs text-gray-500">Since last week</p>
                 </div>
                 <div className="bg-purple-100 p-2 rounded-lg">
@@ -345,30 +356,32 @@ const EcommerceDashboard = () => {
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center border rounded-xl p-5">
                     <div className="bg-blue-100 p-4 rounded-lg mb-2">
                       <PlusIcon className="h-6 w-6 text-blue-500" />
                     </div>
-                    <p className="text-sm font-medium">Add Product</p>
+                    <p className="text-base font-medium">Add Product</p>
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center  border rounded-xl p-5">
                     <div className="bg-red-100 p-4 rounded-lg mb-2">
                       <ShoppingCartIcon className="h-6 w-6 text-red-500" />
                     </div>
-                    <p className="text-sm font-medium">Manage Orders</p>
+                    <p className="text-base font-medium">Manage Orders</p>
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center  border rounded-xl p-5">
                     <div className="bg-purple-100 p-4 rounded-lg mb-2">
                       <PackageIcon className="h-6 w-6 text-purple-500" />
                     </div>
-                    <p className="text-sm font-medium">Inventory Control</p>
+                    <p className="text-base font-medium">Inventory Control</p>
                   </div>
-                  <div className="flex flex-col items-center">
-                    <div className="bg-gray-100 p-4 rounded-lg mb-2">
-                      <Settings2Icon className="h-6 w-6 text-gray-500" />
+                  <Link href="/generate_repo">
+                    <div className="flex flex-col items-center  border rounded-xl p-5">
+                      <div className="bg-gray-100 p-4 rounded-lg mb-2">
+                        <Settings2Icon className="h-6 w-6 text-gray-500" />
+                      </div>
+                      <p className="text-base font-medium">Settings Hub</p>
                     </div>
-                    <p className="text-sm font-medium">Settings Hub</p>
-                  </div>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -433,9 +446,12 @@ const EcommerceDashboard = () => {
                 View All
               </Button>
             </CardHeader>
-            <CardContent className="space-y-4 max-h-[600px] overflow-y-auto">
+            <CardContent className="space-y-4  overflow-y-auto">
               {scheduleItems.map((item) => (
-                <div key={item.id} className="flex items-start gap-3">
+                <div
+                  key={item.id}
+                  className="flex items-start gap-3 border-t p-3"
+                >
                   <div
                     className={`p-2 rounded-lg ${
                       item.icon === "clipboard"

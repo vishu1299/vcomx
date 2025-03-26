@@ -1,10 +1,11 @@
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaPinterestP,
-} from "react-icons/fa";
-import { CiYoutube } from "react-icons/ci";
+// import {
+//   FaFacebookF,
+//   FaInstagram,
+//   FaTwitter,
+//   FaPinterestP,
+// } from "react-icons/fa";
+// import { CiYoutube } from "react-icons/ci";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -72,6 +73,14 @@ function Footer() {
                 <p className="font-Oswald text-[15px] font-normal text-[#FFFFFF]">
                   Sunday: 9:00 am – 5:00 pm
                 </p>
+                <div className="bg-[#FF6F3C] rounded-[8px] h-[45px] flex justify-center items-center hover:bg-[#e5633c] transition-colors mt-5 max-w-fit">
+                  <Link
+                    href="/dashboard"
+                    className="text-[#fff] uppercase p-[10px] py-[10px]"
+                  >
+                    Start Selling
+                  </Link>
+                </div>
               </div>
               <div>
                 <p className="font-semibold text-[#FFFFFF] text-[18px] font-Oswald">
@@ -127,13 +136,13 @@ function Footer() {
         <p className="text-center md:text-left">
           Copyright © 2025 Xcrino Business Solutions Inc. All rights reserved
         </p>
-        <div className="flex space-x-4 mt-2 md:mt-0">
+        {/* <div className="flex space-x-4 mt-2 md:mt-0">
           <FaFacebookF className="hover:text-white cursor-pointer" />
           <FaInstagram className="hover:text-white cursor-pointer" />
           <CiYoutube className="hover:text-white cursor-pointer" />
           <FaTwitter className="hover:text-white cursor-pointer" />
           <FaPinterestP className="hover:text-white cursor-pointer" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

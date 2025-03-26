@@ -407,7 +407,7 @@ const AllSearchResult = () => {
         <div className=" w-full">
           <div className="flex   justify-between w-full ">
             <p className=" text-[30px] font-bold text-[#121212] font-Oswald py-3">
-              Curated Brands
+            Emerging Brands
             </p>
 
             <button className=" text-[#FF6F3C] font-Oswald font-bold text-[18px]">

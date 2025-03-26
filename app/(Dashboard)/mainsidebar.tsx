@@ -29,10 +29,10 @@ import Link from "next/link";
 const items = [
   { title: "Dashboard", url: "/dashboard", icon: FaTachometerAlt },
   { title: "Schedule", url: "#", icon: FaCalendarAlt },
-  { title: "Products", url: "#", icon: FaBox },
-  { title: "Orders", url: "#", icon: FaShoppingCart },
+  { title: "Products", url: "/my_inventory", icon: FaBox },
+  { title: "Orders", url: "/my_order", icon: FaShoppingCart },
   { title: "Invoices", url: "/invoice", icon: FaFileInvoice },
-  { title: "Messages", url: "#", icon: FaComments },
+  { title: "Messages", url: "/chat_bar", icon: FaComments },
   { title: "Shipments", url: "/shipments", icon: FaTruck },
 ];
 

@@ -215,9 +215,11 @@ const EcommerceDashboard = () => {
                 <Mic className="h-4 w-4" /> Go Live
               </Button>
             </Link>
-            <Button variant="outline" className="flex items-center gap-2">
-              <CalendarIcon className="h-4 w-4" /> Schedule
-            </Button>
+            <Link href="/schedule">
+              <Button variant="outline" className="flex items-center gap-2">
+                <CalendarIcon className="h-4 w-4" /> Schedule
+              </Button>
+            </Link>
           </div>
         </div>
 

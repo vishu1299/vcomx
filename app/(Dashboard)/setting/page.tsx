@@ -225,14 +225,14 @@ export default function SettingsPage() {
         {/* Right Panel - Forms */}
         <div className="lg:col-span-2">
           {activeSection === "Edit Profile Information" && (
-            <div className="space-y-8">
+            <div className="space-y-8 bg-white p-5">
               {/* Edit Profile Form */}
               <div>
                 <h2 className="text-xl font-semibold mb-6">Edit Profile</h2>
                 <Form {...profileForm}>
                   <form
                     onSubmit={profileForm.handleSubmit(onProfileSubmit)}
-                    className="space-y-6"
+                    className="space-y-6 border p-3 rounded-2xl"
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {/* First Name */}
@@ -473,7 +473,7 @@ export default function SettingsPage() {
                 <Form {...passwordForm}>
                   <form
                     onSubmit={passwordForm.handleSubmit(onPasswordSubmit)}
-                    className="space-y-6"
+                    className="space-y-6 border rounded-2xl p-3"
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {/* Current Password */}

@@ -469,7 +469,7 @@ export default function SettingsPage() {
 
               {/* Change Password Section */}
               <div>
-                <h2 className="text-xl font-semibold mb-6">Change Password</h2>
+                <h2 className="text-xl font-semibold mb-6">Change Password </h2>
                 <Form {...passwordForm}>
                   <form
                     onSubmit={passwordForm.handleSubmit(onPasswordSubmit)}
